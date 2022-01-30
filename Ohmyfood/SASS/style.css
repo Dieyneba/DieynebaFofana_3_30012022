@@ -1,0 +1,45 @@
+/*Partie accueil*/
+/*base*/
+body {
+  font-family: "robotoregular";
+  margin-top: 30px;
+  margin: auto;
+}
+
+.police-du-titre {
+  font-family: "shrikhand-Regular";
+}
+
+/*layout (mise-en-page)*/
+.formulaire {
+  height: 70px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+}
+.formulaire__formulaire-de-recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulaire__barre-de-recherche {
+  height: 50px;
+  font-size: 25px;
+}
+.formulaire__barre-de-recherche__champs-de-recherche {
+  height: 50px;
+}
+
+/*header*/
+.logo {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*footer*//*# sourceMappingURL=style.css.map */

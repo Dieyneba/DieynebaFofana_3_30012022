@@ -1,0 +1,39 @@
+/*Partie accueil*/
+/*base*/
+body {
+    font-family: "robotoregular";
+    margin-top: 30px;
+    margin: auto;
+}
+.police-du-titre {
+    font-family: "shrikhand-Regular";
+  }
+/*layout (mise-en-page)*/
+@mixin flexbox-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulaire {
+  height: 70px;
+  width: 100%;
+  margin-top: 30px;
+  @include flexbox-center;
+  background-color: lightgrey;
+  &__formulaire-de-recherche {
+    @include flexbox-center;
+  }
+}
+.formulaire__barre-de-recherche {
+  height: 50px;
+  font-size: 25px;
+  &__champs-de-recherche {
+    height: 50px;
+  }
+}
+/*header*/
+.logo {
+  margin-top: 30px;
+  @include flexbox-center;
+}
+/*footer*/
