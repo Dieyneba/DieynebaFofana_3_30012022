@@ -3,11 +3,12 @@
 body {
   font-family: "robotoregular";
   margin-top: 30px;
-  margin: auto;
+  margin: 100px;
 }
 
 .police-du-titre {
   font-family: "shrikhand-Regular";
+  font-size: 30px;
 }
 
 /*layout (mise-en-page)*/
@@ -34,12 +35,107 @@ body {
   height: 50px;
 }
 
+.reservation {
+  height: 100px;
+  width: 100%;
+  margin: 20px;
+  font-size: 20px;
+}
+.reservation__bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*variables*/
+/*components*/
+.reservation__btn {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 60px;
+  border: none;
+}
+
+.fonctionnement {
+  margin-top: 200px;
+}
+.fonctionnement__bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.fonctionnement__titre {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.fonctionnement ul {
+  list-style: none;
+}
+
+/*restaurants*/
+.restaurants {
+  height: 2300px;
+  margin-bottom: 100px;
+}
+.restaurants__card {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.restaurants img {
+  width: 80%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.restaurant__bloc {
+  height: 2200px;
+}
+
 /*header*/
 .logo {
   margin-top: 30px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/*footer*//*# sourceMappingURL=style.css.map */
+/*footer*/
+.pied-de-page {
+  height: 200px;
+  margin-bottom: 30px;
+}
+.pied-de-page__bloc {
+  height: 100px;
+}
+
+.pied-de-page__bloc-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pied-de-page__bloc-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
