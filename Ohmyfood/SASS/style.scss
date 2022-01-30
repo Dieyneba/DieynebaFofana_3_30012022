@@ -121,7 +121,7 @@ $color-tertiary:#99E2D0;
   color: white;
   &__bloc {
     height: 150px;
-    font-size: 25px;
+    font-size:40px;
     .pied-de-page__bloc-1 {
       @include flexbox-row;
       padding-right:50px
