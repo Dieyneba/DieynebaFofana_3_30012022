@@ -3,19 +3,21 @@
 body {
   font-family: "robotoregular";
   margin-top: 30px;
-  margin: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 90%;
 }
 
 .police-du-titre {
   font-family: "shrikhand-Regular";
-  font-size: 30px;
+  font-size: 45px;
 }
 
-/*layout (mise-en-page)*/
 .formulaire {
-  height: 70px;
+  height: 100px;
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,17 +31,21 @@ body {
 
 .formulaire__barre-de-recherche {
   height: 50px;
-  font-size: 25px;
+  width: 100%;
+  margin-left: 20px;
+  font-size: 35px;
 }
 .formulaire__barre-de-recherche__champs-de-recherche {
-  height: 50px;
+  height: 80px;
+  padding-left: 20px;
+  border: none;
+  background-color: lightgrey;
 }
 
 .reservation {
-  height: 100px;
+  height: 150px;
   width: 100%;
-  margin: 20px;
-  font-size: 20px;
+  font-size: 35px;
 }
 .reservation__bloc {
   display: flex;
@@ -52,32 +58,27 @@ body {
 /*components*/
 .reservation__btn {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 20px;
   padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 60px;
   border: none;
 }
 
 .fonctionnement {
-  margin-top: 200px;
+  margin-top: 300px;
+  height: 400px;
 }
 .fonctionnement__bloc {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  font-size: 30px;
-  margin-right: 80px;
-  margin-left: 80px;
-}
-
-.fonctionnement__titre {
-  margin-top: 100px;
-  margin-left: 100px;
+  justify-content: space-evenly;
+  font-size: 35px;
+  height: 150px;
 }
 
 .fonctionnement ul {
@@ -87,6 +88,7 @@ body {
 /*restaurants*/
 .restaurants {
   height: 2300px;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 .restaurants__card {
@@ -96,7 +98,7 @@ body {
 }
 
 .restaurants img {
-  width: 80%;
+  width: 100%;
   height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -108,6 +110,7 @@ body {
   height: 2200px;
 }
 
+/*layout (mise-en-page)*/
 /*header*/
 .logo {
   margin-top: 30px;
@@ -121,21 +124,50 @@ body {
 .pied-de-page {
   height: 200px;
   margin-bottom: 30px;
+  background-color: black;
+  color: white;
 }
 .pied-de-page__bloc {
-  height: 100px;
+  height: 150px;
+  font-size: 40px;
 }
 
 .pied-de-page__bloc-1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-right: 50px;
 }
 
 .pied-de-page__bloc-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+/*page restaurant*/
+body {
+  width: 90%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.image-carte-restaurant img {
+  height: 450px;
+  width: 100%;
+  margin-top: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.restaurant__menu {
+  height: 2200px;
+  width: 100%;
+}
+.restaurant__menu__icone-coeur {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
