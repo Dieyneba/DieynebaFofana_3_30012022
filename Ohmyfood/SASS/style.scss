@@ -9,7 +9,12 @@ body {
 .police-du-titre {
     font-family: "shrikhand-Regular";
     font-size: 60px;
+    font-weight: bold;
   }
+.police-du-titre-1 {
+  font-family: "shrikhand-Regular";
+  font-size: 45px;
+}
 @mixin flexbox-center {
   display: flex;
   align-items: center;
@@ -48,11 +53,11 @@ body {
   padding-right: 100px;
   @include flexbox-center;
   border-top: 2px solid grey;
-  background-color:$color-background;
+  background-color:lightgrey;
   &__formulaire-de-recherche {
     @include flexbox-center;
     border: none;
-    background-color: $color-background;
+    background-color: lightgrey;
   }
 }
 .formulaire__barre-de-recherche {
@@ -65,7 +70,7 @@ body {
   height: 50px;
   padding-left: 30px;
   border: none;
-  background-color: $color-background;
+  background-color:lightgrey;
 }
 .reservation {
   height: 150px;
@@ -78,9 +83,9 @@ body {
     }
   }
 .reservation__texte {
-  height: 20px;
+  height: 60px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-size: 45px;
   text-align: center;
   @include flexbox-center;
@@ -89,12 +94,12 @@ body {
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
-$color-background:lightgrey;
 /*components*/
 .reservation__btn {
   color: white;
   font-size: 40px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 250px;
   padding: 30px;
   padding-left: 60px;
   padding-right: 60px;
@@ -102,18 +107,18 @@ $color-background:lightgrey;
   border-radius: 60px;
   border: none;
 }
-
 .fonctionnement {
-  height: 400px;
-  margin-bottom: 250px;
+  height: 800px;
+  margin-top: 300px;
+  margin-bottom: 200px;
   width: 100%;
   &__bloc {
-    @include flexbox-row-space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 40px;
     height: 150px;
     width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
     margin-bottom: 40px;
     border-radius: 45px;
     box-shadow: 5px 5px 5px 5px grey;
@@ -122,73 +127,189 @@ $color-background:lightgrey;
 .fonctionnement ul {
   list-style: none;
   li {
-    margin-left: 0px;
+    font-weight: bold; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+}
+.fonctionnement__numero {
+  border-radius: 35px;
+  border: 2px solid $color-primary;
+  padding: 15px;
+  font-size: 28px;
+  background-color: $color-primary;
+  color: white;
+  text-align: center;
+}
+.fonctionnement__positionnement-1 {
+  position: absolute;
+  top:1130px;
+  left: 35px;
+}
+.fonctionnement__positionnement-2 {
+  position: absolute;
+  top:1320px;
+  left:35px;
+}
+.fonctionnement__positionnement-3 {
+  position: absolute;
+  top: 1510px;
+  left: 35px;
+}
+.fonctionnement__icone {
+  color: grey;
+  padding-left: 10%;
+}
+.fonctionnement__icone:hover {
+  color:$color-primary;
 }
 /*restaurants*/
 .restaurants {
-  height: 2300px;
+  height: 3000px;
   margin-top: 150px;
   margin-bottom: 100px;
-  &__card{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  &__bloc {
+    height: 2500px;
+    margin-bottom: 60px;
   }
+}
+.restaurant__card{
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .restaurants img {
   width:100%;
-  height: 420px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 35px 35px 0px 0px;
+}
+.restaurant__card-image img{
+  height: 450px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.restaurant__bloc {
-  height: 2200px;
+.restaurant__texte-image {
+  font-size: 45px;  
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant__texte-image-1 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: -5%;
+  padding-bottom: 5%;
+}
+.restaurant__ville {
+  padding-bottom: 2%;
+}
+.restaurant__icone-coeur {
+  font-size: 60px;
+  padding-top: 95%;
+}
+.restaurant__titre-nouveau-1 {
+  font-size: 40px;
+  text-align: center;
+  border: 2px solid $color-tertiary;
+  background-color: $color-tertiary;
+  width: 22%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 2150px;
+  left: 650px;
+}
+.restaurant__titre-nouveau-2 {
+  font-size: 40px;
+  text-align: center;
+  border: 2px solid $color-tertiary;
+  background-color: $color-tertiary;
+  width: 22%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 2900px;
+  left: 650px;
 }
 /*layout (mise-en-page)*/
 /*header*/
 .logo {
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-top: 10%;
   font-size: 30px;
   @include flexbox-center;
 }
 /*footer*/
+.pied-de-page__logo-1 {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  padding: 5%;
+}
 .pied-de-page {
-  height: 200px;
-  margin-bottom: 30px;
+  height: 600px;
+  margin-top: 200px;
+  margin-bottom: 50px;
   background-color: black;
   color: white;
-  &__bloc {
-    height: 150px;
-    font-size:40px;
-  }
+}
+.pied-de-page__bloc {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-size:40px;
+  padding-left: 50px;
 }
 .pied-de-page__bloc-1 {
-  @include flexbox-row-space-evenly;
-  padding-right:50px
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .pied-de-page__bloc-2 {
-  @include flexbox-row-space-evenly;
-} 
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pied-de-page__icone-2 {
+  margin-right: 30px;
+}
 /*page restaurant*/
-body{
-  width: 90%;
-  margin-right: 50px;
-  margin-left: 50px;
+.icone-fleche {
+  font-size: 50px;
 }
 .image-carte-restaurant img {
-  height: 450px;
+  height: 550px;
   width: 100%;
   margin-top: 50px;
   object-fit: cover;
   object-position: center;
 }
 .restaurant__menu {
-  height: 2200px;
+  height: 2000px;
+  width: 100%; 
+}
+.restaurant__nom {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  &__icone-coeur{
-    display:flex;
-  }
+  padding-right: 50px;
   
-    
+} 
+h1 {
+  font-size: 80px;
+  font-style: italic;
+  padding-left: 50px;
+  font-weight: bold;
 }

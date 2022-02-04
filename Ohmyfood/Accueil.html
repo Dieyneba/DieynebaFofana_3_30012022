@@ -2,16 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="SASS/style.css" />
-    <link
-      rel="stylesheet"
-      href="CSS/Media_tablette_page_accueil.css"
-    />
-    <link
-      rel="stylesheet"
-      href="CSS/Media_desktop_page_accueil.css"
-    />
+    <link rel="stylesheet" href="CSS/Media_tablette_page_accueil.css" />
+    <link rel="stylesheet" href="CSS/Media_desktop_page_accueil.css" />
     <script
       src="https://kit.fontawesome.com/24cde4dada.js"
       crossorigin="anonymous"
@@ -22,10 +16,7 @@
   <body>
     <header>
       <div class="logo">
-        <img
-          src="images/logo/ohmyfood.png"
-          alt="logo ohmyfood"
-        />
+        <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
       </div>
     </header>
     <main>
@@ -43,36 +34,41 @@
       </section>
       <section class="reservation">
         <div class="reservation__bloc">
-          <h1 class="reservation__texte police-du-titre ">
-            Réservez le menu qui<br> vous convient <br>
-          </h1>
-          <h1 class="reservation__texte police-du-titre ">
-            
+          <h1 class="reservation__texte police-du-titre">
+            Réservez le menu qui<br />
+            vous convient <br />
           </h1>
           <p class="reservation__texte">
-            Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.<br>
+            Découvrez des restaurants d'exception,<br />
+            séléctionnés par nos soins.<br />
           </p>
           <button class="reservation__btn">Explorer nos restaurants</button>
         </div>
       </section>
       <section class="fonctionnement">
         <h2 class="fonctionnement__titre police-du-titre">Fonctionnement</h2>
+        <div class="fonctionnement__numero fonctionnement__positionnement-1">
+          1
+        </div>
         <div class="fonctionnement__bloc">
-          <div class="fonctionnement__numero">1</div>
           <i class="fonctionnement__icone fas fa-mobile-alt"></i>
           <ul>
             <li>Choisissez un restaurant</li>
           </ul>
         </div>
+        <div class="fonctionnement__numero fonctionnement__positionnement-2">
+          2
+        </div>
         <div class="fonctionnement__bloc">
-          <div class="fonctionnement__numero">2</div>
           <i class="fonctionnement__icone fas fa-list"></i>
           <ul>
             <li>Composez votre menu</li>
           </ul>
         </div>
+        <div class="fonctionnement__numero fonctionnement__positionnement-3">
+          3
+        </div>
         <div class="fonctionnement__bloc">
-          <div class="fonctionnement__numero">3</div>
           <i class="fonctionnement__icone fas fa-store"></i>
           <ul>
             <li>Dégustez au restaurant</li>
@@ -83,17 +79,22 @@
         <h2 class="restaurant__titre police-du-titre">Restaurants</h2>
         <div class="restaurant__bloc">
           <div class="restaurant__card">
-            <div class="restaurant__card-image">
+            <div>
               <img
                 src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="la palette du goût"
               />
             </div>
             <div class="restaurant__texte-image">
-              <h3 class="restaurant__ titre police-du-titre">La palette du goût</h3>
-              <div>Ménilmontant</div>
+              <div class="restaurant__texte-image-1">
+              <h3 class="restaurant__ titre police-du-titre-1">
+                La palette du goût
+              </h3>
+              <div class="restaurant__ville">Ménilmontant</div>
+            </div>
               <div><i class="restaurant__icone-coeur far fa-heart"></i></div>
             </div>
+
             <div class="restaurant__titre-nouveau-1">Nouveau</div>
           </div>
           <div class="restaurant__card">
@@ -104,35 +105,47 @@
               />
             </div>
             <div class="restaurant__texte-image">
-              <h3 class="restaurant__titre police-du-titre">La note enchantée</h3>
-              <div>Charonne</div>
+              <div class="restaurant__texte-image-1">
+              <h3 class="restaurant__titre police-du-titre-1">
+                La note enchantée
+              </h3>
+              <div class="restaurant__ville">Charonne</div>
+            </div>
               <div><i class="restaurant__icone-coeur far fa-heart"></i></div>
             </div>
             <div class="restaurant__titre-nouveau-2">Nouveau</div>
           </div>
           <div class="restaurant__card">
-            <div class="restaurant__card-image">
+            <div>
               <img
                 src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="Cité rouge"
               />
             </div>
             <div class="restaurant__texte-image">
-              <h3 class="restaurant__titre police-du-titre">À la Française</h3>
-              <div>Cité Rouge</div>
+              <div class="restaurant__texte-image-1">
+              <h3 class=" restaurant__titre police-du-titre-1 ">
+                À la française
+              </h3>
+              <div class="restaurant__ville">Cité Rouge</div>
+            </div>
               <div><i class="restaurant__icone-coeur far fa-heart"></i></div>
             </div>
           </div>
           <div class="restaurant__card">
-            <div class="restaurant__card-image">
+            <div>
               <img
                 src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="le délice des sens"
               />
             </div>
             <div class="restaurant__texte-image">
-              <h3 class="restaurant__titre police-du-titre">Le délice des sens</h3>
-              <div>Folie-Méricourt</div>
+              <div class="restaurant__texte-image-1">
+              <h3 class="restaurant__titre police-du-titre-1">
+                Le délice des sens
+              </h3>
+              <div class="restaurant__ville">Folie-Méricourt</div>
+            </div>
               <div><i class="restaurant__icone-coeur far fa-heart"></i></div>
             </div>
           </div>
@@ -141,19 +154,15 @@
     </main>
     <footer class="pied-de-page">
       <div class="pied-de-page__logo-1">
-        <img
-          class="police-du-titre"
-          src="images/logo/ohmyfood@2x.svg"
-          alt="logo ohmyfood"
-        />
+       Ohmyfood
       </div>
       <div class="pied-de-page__bloc">
         <div class="pied-de-page__bloc-1">
-          <div><i class="pied-de-page__icone fas fa-utensils"></i></div>
+          <div><i class="pied-de-page__icone-1 fas fa-utensils"></i></div>
           <p>Proposer un restaurant</p>
         </div>
         <div class="pied-de-page__bloc-2">
-          <div><i class="pied-de-page__icone fas fa-hands-helping"></i></div>
+          <div><i class="pied-de-page__icone-2 fas fa-hands-helping"></i></div>
           <p>Devenir partenaire</p>
         </div>
         <p>Mentions légales</p>
