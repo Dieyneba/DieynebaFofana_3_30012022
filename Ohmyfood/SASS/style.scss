@@ -2,14 +2,13 @@
 /*base*/
 body {
     font-family: "robotoregular";
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 90%;
+    margin-top: 50px;
+    margin:auto;
+    max-width: 1000px;   
 }
 .police-du-titre {
     font-family: "shrikhand-Regular";
-    font-size: 45px;
+    font-size: 60px;
   }
 @mixin flexbox-center {
   display: flex;
@@ -22,71 +21,109 @@ body {
   align-items: center;
   justify-content: center;
 }
+@mixin flexbox-column-space-between {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 @mixin flexbox-row-space-evenly {
   display: flex; 
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly; 
 }
+@mixin flexbox-row-space-between {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .formulaire {
   height: 100px;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 50px;
+  margin-left: -50px;
+  padding-right: 100px;
   @include flexbox-center;
-  background-color: lightgrey;
+  border-top: 2px solid grey;
+  background-color:$color-background;
   &__formulaire-de-recherche {
     @include flexbox-center;
+    border: none;
+    background-color: $color-background;
   }
 }
 .formulaire__barre-de-recherche {
   height: 50px;
   width: 100%;
-  margin-left: 20px;
-  font-size: 35px;
-  &__champs-de-recherche {
-    height: 80px;
-    padding-left: 20px;
-    border: none;
-    background-color: lightgrey;
-  }
+  margin-left: 250px;
+  font-size: 40px;
+}
+.formulaire__champs-de-recherche {
+  height: 50px;
+  padding-left: 30px;
+  border: none;
+  background-color: $color-background;
 }
 .reservation {
   height: 150px;
+  margin-top: 80px;
+  margin-bottom: 400px;
   width:100%;
-  font-size: 35px;
+  background-color: lightness($color:grey);
     &__bloc {
     @include flexblox-column;
     }
   }
-
+.reservation__texte {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+  @include flexbox-center;
+}
 /*variables*/
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
+$color-background:lightgrey;
 /*components*/
 .reservation__btn {
   color: white;
-  font-size: 35px;
-  margin-top: 20px;
+  font-size: 40px;
+  margin-top: 100px;
   padding: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-image: linear-gradient(to top, $color-primary,$color-secondary);
   border-radius: 60px;
   border: none;
 }
+
 .fonctionnement {
-  margin-top: 300px;
   height: 400px;
+  margin-bottom: 250px;
+  width: 100%;
   &__bloc {
-    @include flexbox-row-space-evenly;
-    font-size: 35px;
+    @include flexbox-row-space-between;
+    font-size: 40px;
     height: 150px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px 5px grey;
   }
 }
 .fonctionnement ul {
   list-style: none;
+  li {
+    margin-left: 0px;
+  }
 }
 /*restaurants*/
 .restaurants {

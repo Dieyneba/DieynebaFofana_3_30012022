@@ -2,10 +2,9 @@
 /*base*/
 body {
   font-family: "robotoregular";
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-  width: 90%;
+  margin-top: 50px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .police-du-titre {
@@ -18,34 +17,42 @@ body {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 50px;
+  margin-left: -50px;
+  padding-right: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 2px solid grey;
   background-color: lightgrey;
 }
 .formulaire__formulaire-de-recherche {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  background-color: lightgrey;
 }
 
 .formulaire__barre-de-recherche {
   height: 50px;
   width: 100%;
-  margin-left: 20px;
-  font-size: 35px;
+  margin-left: 250px;
+  font-size: 40px;
 }
-.formulaire__barre-de-recherche__champs-de-recherche {
-  height: 80px;
-  padding-left: 20px;
+
+.formulaire__champs-de-recherche {
+  height: 50px;
+  padding-left: 30px;
   border: none;
   background-color: lightgrey;
 }
 
 .reservation {
   height: 150px;
+  margin-top: 80px;
+  margin-bottom: 400px;
   width: 100%;
-  font-size: 35px;
+  background-color: 50.1960784314%;
 }
 .reservation__bloc {
   display: flex;
@@ -54,12 +61,23 @@ body {
   justify-content: center;
 }
 
+.reservation__texte {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*variables*/
 /*components*/
 .reservation__btn {
   color: white;
-  font-size: 35px;
-  margin-top: 20px;
+  font-size: 40px;
+  margin-top: 100px;
   padding: 30px;
   padding-left: 70px;
   padding-right: 70px;
@@ -69,20 +87,30 @@ body {
 }
 
 .fonctionnement {
-  margin-top: 300px;
   height: 400px;
+  margin-bottom: 250px;
+  width: 100%;
 }
 .fonctionnement__bloc {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  font-size: 35px;
+  justify-content: space-between;
+  font-size: 40px;
   height: 150px;
+  width: 90%;
+  margin-left: 0px;
+  margin-right: 110px;
+  margin-bottom: 40px;
+  border-radius: 45px;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 
 .fonctionnement ul {
   list-style: none;
+}
+.fonctionnement ul li {
+  margin-left: 0px;
 }
 
 /*restaurants*/
