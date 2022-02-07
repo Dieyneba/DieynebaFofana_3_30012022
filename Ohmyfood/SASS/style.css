@@ -251,7 +251,7 @@ body {
 }
 
 .restaurant__icone-coeur {
-  font-size: 60px;
+  font-size: 65px;
   padding-top: 95%;
 }
 
@@ -361,9 +361,10 @@ body {
 
 .image-carte-restaurant img {
   height: 650px;
-  width: 100%;
+  width: 1130px;
   margin-top: 50px;
-  padding-right: 50px;
+  margin-left: -50px;
+  margin-right: 0px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -371,9 +372,16 @@ body {
 }
 
 .restaurant__menu {
-  height: 3700px;
+  height: 4150px;
   width: 100%;
   margin-bottom: 100px;
+  margin-left: -50px;
+  padding-right: 150px;
+  background-color: #f2f2f2;
+  border-radius: 95px 95px 0px 0px;
+  border-top: 2px solid grey;
+  position: absolute;
+  top: 800px;
 }
 
 .restaurant__nom {
@@ -386,23 +394,27 @@ body {
 }
 
 .restaurant__titre-1 {
-  font-size: 80px;
+  font-size: 55px;
   font-style: italic;
-  padding-left: 55px;
   font-weight: bold;
+  margin-top: 30px;
+  padding-left: 40px;
 }
 
 .entrée {
-  font-size: 40px;
+  height: 1200px;
+  font-size: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
+  width: 100%;
 }
 .entrée__bloc {
   margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 45px;
-  box-shadow: 5px 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px 5px silver;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -414,22 +426,31 @@ body {
   flex-direction: column;
 }
 
+.entrée__accompagnement {
+  margin-top: -5%;
+  padding-bottom: 5%;
+}
+
 .entrée__titre {
   -webkit-text-decoration: underline #99E2D0;
           text-decoration: underline #99E2D0;
+  font-size: 45px;
 }
 
 .plats {
-  font-size: 40px;
+  height: 1200px;
+  font-size: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
+  width: 100%;
 }
 .plats__bloc {
   margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 45px;
-  box-shadow: 5px 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px 5px silver;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -439,24 +460,34 @@ body {
 .plats__bloc-1 {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0%;
+}
+
+.plats__accompagnement {
+  margin-top: -5%;
+  padding-bottom: 5%;
 }
 
 .plats__titre {
   -webkit-text-decoration: underline #99E2D0;
           text-decoration: underline #99E2D0;
+  font-size: 45px;
 }
 
 .desserts {
+  height: 1200px;
   font-size: 40px;
   margin-bottom: 50px;
   margin-left: 50px;
+  width: 100%;
 }
 .desserts__bloc {
   margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 45px;
-  box-shadow: 5px 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px 5px silver;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -466,11 +497,19 @@ body {
 .desserts__bloc-1 {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0%;
+  font-size: 50px;
+}
+
+.desserts__accompagnement {
+  margin-top: -5%;
+  padding-bottom: 5%;
 }
 
 .desserts__titre {
   -webkit-text-decoration: underline #99E2D0;
           text-decoration: underline #99E2D0;
+  font-size: 45px;
 }
 
 .btn {
@@ -478,11 +517,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #f2f2f2;
+  margin-right: -150px;
 }
 
 .btn-commander {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 50px;
   margin-bottom: 250px;
   padding: 30px;
