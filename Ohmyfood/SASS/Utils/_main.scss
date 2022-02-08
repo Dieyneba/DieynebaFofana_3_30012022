@@ -1,0 +1,375 @@
+/*rubrique reservation page accueil*/
+.reservation {
+    height: 650px;
+    margin-top: -50px;
+    margin-left: -50px;
+    padding-right: 100px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    width:100%;
+    background-color: lighten(lightgrey, 12%);
+      &__bloc {
+      @include flexblox-column;  
+      }
+    }
+  .reservation__texte {
+    height: 60px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    @include flexbox-center;
+  }
+  .reservation__titre-1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+ 
+  /*rubrique fonctionnement*/
+  
+  .fonctionnement {
+    height: 800px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100%;
+    &__bloc {
+      @include flexbox-row-center;
+      font-size: 40px;
+      height: 150px;
+      width: 100%;
+      margin-bottom: 40px;
+      border-radius: 45px;
+      box-shadow: 7px 7px 7px 7px lighten(grey, 25%);
+      background-color: lighten(lightgrey, 12%);
+      &:hover {
+        background-color:lighten($color-primary, 30%);
+      }
+    }
+  }
+  
+  .fonctionnement ul {
+    list-style: none;
+    font-size: 45px;
+    li {
+      font-weight: bold; 
+      @include flexblox-column;
+    }
+  }
+  .fonctionnement__titre {
+    margin-left: -30px;
+    font-size: 55px;
+  }
+  .fonctionnement__numero {
+    border-radius: 40px;
+    border: 2px solid $color-primary;
+    padding: 15px;
+    font-size: 28px;
+    background-color: $color-primary;
+    color: white;
+    text-align: center;
+  }
+  .fonctionnement__positionnement-1 {
+    position: absolute;
+    top:1270px;
+    left: 55px;
+  }
+  .fonctionnement__positionnement-2 {
+    position: absolute;
+    top:1450px;
+    left:55px;
+  }
+  .fonctionnement__positionnement-3 {
+    position: absolute;
+    top: 1650px;
+    left: 55px;
+  }
+  .fonctionnement__icone {
+    color: grey;
+    padding-left: 10%;
+    &:hover {
+    color:$color-primary;
+    }
+  }
+  /*rubrique page restaurants accueil*/
+  .restaurants {
+    height: 3000px;
+    margin-top: 100px;
+    margin-bottom:0px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: -50px;
+    margin-right: -100px;
+    background-color: lighten(lightgrey, 12%);
+    &__bloc {
+      height: 2500px;
+      margin-bottom: 60px;
+    }
+  }
+  section a {
+    text-decoration: none;
+    color: black;
+  }
+  .restaurant__card{
+    height: 650px;
+    width: 90%;
+    margin-left: 40px;
+    border-radius: 25px;
+    @include shadow;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .restaurants img {
+    width:100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 35px 35px 0px 0px;
+  }
+  .restaurant__card-image img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .restaurant__texte-image {
+    font-size: 45px;  
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .restaurant__texte-image-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-top: -6%;
+  }
+  .restaurant__ville {
+    padding-bottom: 5%;
+    margin-top: -10%;
+  }
+  .restaurant__icone-coeur {
+    color: grey;
+    font-size: 75px;
+    padding-top: 95%;
+    &:active {
+      background-image: linear-gradient($color-secondary,$color-primary);
+      background-clip: text;
+      transform: scaley(0);
+      transition: transform 1000ms;
+      transform-origin: top;
+    }
+  }
+  .restaurant__titre-principale {
+    margin-left: 50px;
+    font-size: 55px;
+  }
+  .restaurant__titre {
+    font-size: 45px;
+  }
+  .restaurant__titre-nouveau-1 {
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid $color-tertiary;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 35%);
+    font-weight: bold;
+    width: 22%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 2250px;
+    left:700px;
+  }
+  .restaurant__titre-nouveau-2 {
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid $color-tertiary;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 35%);
+    font-weight: bold;
+    width: 22%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 2950px;
+    left: 700px;
+  }
+  /* rubrique page restaurant*/
+.icone-fleche {
+    font-size: 60px;
+    margin-left: -200px;
+    margin-right: 220px;
+  }
+  .image-carte-restaurant img {
+    height: 650px;
+    width: 1130px;
+    margin-top: 50px;
+    margin-left: -50px;
+    margin-right: 0px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .restaurant__menu {
+    height: 3200px;
+    width: 100%;
+    margin-bottom: 100px; 
+    margin-left: -50px;
+    padding-right: 150px;
+    background-color: lighten(lightgrey, 12%);
+    border-radius: 95px 95px 0px 0px;
+    border-top: 2px solid grey;
+    position: absolute;
+    top:800px
+  }
+  .restaurant__nom {
+    @include flexbox-row-space-between;
+    width: 100%;
+    padding-right: 50px;
+    
+  } 
+  .restaurant__titre-1 {
+    font-size: 40px;
+    font-family: "Shrikhand";
+    margin-top: 70px;
+    padding-left: 60px;
+  }
+  .entrée {
+    height: 900px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 2%;
+      padding-right: 2%;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .entrée__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .entrée__icone-coche {
+    display: none;
+    &:hover {
+      overflow: hidden;
+      color: $color-tertiary;
+      border-radius: 0px 25px 0px 25px;
+      background-color: $color-tertiary;
+      padding: 20px;
+
+    }
+  }
+  .entrée__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .entrée__titre {
+    text-decoration: underline $color-tertiary; 
+    font-size: 50px;
+  }
+  .entrée__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .plats {
+    height: 900px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .plats__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .plats__icone-coche {
+    display: none;
+  }
+  .plats__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .plats__titre {
+    text-decoration: underline $color-tertiary; 
+    font-size: 50px;
+  }
+  .plats__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .desserts {
+    height: 900px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .desserts__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+  .desserts__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .desserts__titre {
+    text-decoration: underline $color-tertiary; 
+    font-size: 50px;
+  }
+  .desserts__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .desserts__icone-coche {
+    display: none;
+  }
+  

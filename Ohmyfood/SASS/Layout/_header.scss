@@ -1,0 +1,7 @@
+
+.logo {
+    margin-top: 50px;
+    padding-top: 10%;
+    font-size: 30px;
+    @include flexbox-center;
+  }

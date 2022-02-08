@@ -1,0 +1,29 @@
+/*formulaire accueil*/
+.formulaire {
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: -50px;
+    padding-right: 150px;
+    @include flexbox-center;
+    border-top: 2px solid grey;
+    background-color:lightgrey;
+    &__formulaire-de-recherche {
+      @include flexbox-center;
+      border: none;
+      background-color: lightgrey;
+    }
+  }
+  .formulaire__barre-de-recherche {
+    height: 50px;
+    width: 100%;
+    margin-left: 250px;
+    font-size: 40px;
+  }
+  .formulaire__champs-de-recherche {
+    height: 50px;
+    padding-left: 30px;
+    border: none;
+    background-color:lightgrey;
+    }
