@@ -1,30 +1,155 @@
 @charset "UTF-8";
-/*Partie accueil*/
 /*utils*/
 /*color*/
 /*base*/
 body {
   font-family: "Roboto";
-  margin: 50px;
-  height: 5000px;
-  max-width: 1000px;
+  height: 6000px;
   box-sizing: border-box;
 }
 
 .police-du-titre {
   font-family: "Shrikhand";
-  font-size: 55px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-/*utils*/
+/* btn accueil*/
+.reservation__btn {
+  color: white;
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 250px;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 4px 4px 4px 4px silver;
+  border-radius: 60px;
+  border: none;
+}
+.reservation__btn:hover {
+  box-shadow: 4px 4px 4px 4px #9a9a9a;
+  opacity: 1;
+}
+
+/*btn menu*/
+.btn {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin-right: -150px;
+}
+
+.btn-commander {
+  color: white;
+  font-size: 50px;
+  padding: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 60px;
+  border: none;
+}
+
+/*layout*/
+/*footer*/
+.pied-de-page__logo-1 {
+  font-size: 50px;
+  padding: 5%;
+}
+
+.pied-de-page {
+  height: 500px;
+  background-color: #333333;
+  color: white;
+}
+
+.pied-de-page__bloc {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  padding-left: 50px;
+}
+
+.pied-de-page__bloc-1 {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.pied-de-page__bloc-2 {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pied-de-page__icone-1 {
+  margin-right: 50px;
+}
+
+.pied-de-page__icone-2 {
+  margin-right: 30px;
+}
+
+.pied-de-page__contact {
+  margin-top: 0px;
+}
+
+/*formulaire accueil*/
+.formulaire {
+  height: 100px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid grey;
+  background-color: lightgrey;
+}
+.formulaire__formulaire-de-recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: lightgrey;
+}
+
+.formulaire__barre-de-recherche {
+  height: 50px;
+  width: 100%;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.formulaire__champs-de-recherche {
+  height: 50px;
+  padding-left: 30px;
+  border: none;
+  background-color: lightgrey;
+}
+
+.logo {
+  margin-top: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*pages*/
 /*rubrique reservation page accueil*/
 .reservation {
   height: 650px;
   margin-top: -50px;
-  margin-left: -50px;
-  padding-right: 100px;
-  padding-left: 50px;
   margin-bottom: 50px;
   width: 100%;
   background-color: #f2f2f2;
@@ -57,10 +182,8 @@ body {
 /*rubrique fonctionnement*/
 .fonctionnement {
   height: 800px;
-  margin-top: 120px;
-  margin-bottom: 100px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 100px;
+  margin-bottom: 10px;
   width: 100%;
 }
 .fonctionnement__bloc {
@@ -92,36 +215,18 @@ body {
 }
 
 .fonctionnement__titre {
-  margin-left: -30px;
+  margin-left: 40px;
   font-size: 55px;
 }
 
 .fonctionnement__numero {
-  border-radius: 40px;
+  border-radius: 30px;
   border: 2px solid #9356DC;
   padding: 15px;
   font-size: 28px;
   background-color: #9356DC;
   color: white;
   text-align: center;
-}
-
-.fonctionnement__positionnement-1 {
-  position: absolute;
-  top: 1270px;
-  left: 55px;
-}
-
-.fonctionnement__positionnement-2 {
-  position: absolute;
-  top: 1450px;
-  left: 55px;
-}
-
-.fonctionnement__positionnement-3 {
-  position: absolute;
-  top: 1650px;
-  left: 55px;
 }
 
 .fonctionnement__icone {
@@ -135,12 +240,10 @@ body {
 /*rubrique page restaurants accueil*/
 .restaurants {
   height: 3000px;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 100px;
-  margin-left: -50px;
-  margin-right: -100px;
   background-color: #f2f2f2;
 }
 .restaurants__bloc {
@@ -210,14 +313,7 @@ section a {
   color: grey;
   font-size: 75px;
   padding-top: 95%;
-}
-.restaurant__icone-coeur:active {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  transform: scaley(0);
-  transition: transform 1000ms;
-  transform-origin: top;
+  margin-left: 40%;
 }
 
 .restaurant__titre-principale {
@@ -239,9 +335,6 @@ section a {
   width: 22%;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: absolute;
-  top: 2250px;
-  left: 700px;
 }
 
 .restaurant__titre-nouveau-2 {
@@ -254,9 +347,6 @@ section a {
   width: 22%;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: absolute;
-  top: 2950px;
-  left: 700px;
 }
 
 /* rubrique page restaurant*/
@@ -270,8 +360,6 @@ section a {
   height: 650px;
   width: 1130px;
   margin-top: 50px;
-  margin-left: -50px;
-  margin-right: 0px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -279,16 +367,12 @@ section a {
 }
 
 .restaurant__menu {
-  height: 3200px;
+  height: 3500px;
   width: 100%;
-  margin-bottom: 100px;
-  margin-left: -50px;
-  padding-right: 150px;
+  margin-bottom: 50px;
   background-color: #f2f2f2;
   border-radius: 95px 95px 0px 0px;
   border-top: 2px solid grey;
-  position: absolute;
-  top: 800px;
 }
 
 .restaurant__nom {
@@ -308,10 +392,11 @@ section a {
 }
 
 .entrée {
-  height: 900px;
+  height: 1000px;
   font-size: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
+  margin-right: 40px;
   width: 100%;
 }
 .entrée__bloc {
@@ -334,6 +419,9 @@ section a {
   flex-direction: column;
   padding-left: 2%;
   padding-right: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .entrée__icone-coche {
@@ -353,8 +441,6 @@ section a {
 }
 
 .entrée__titre {
-  -webkit-text-decoration: underline #99E2D0;
-          text-decoration: underline #99E2D0;
   font-size: 50px;
 }
 
@@ -365,7 +451,7 @@ section a {
 }
 
 .plats {
-  height: 900px;
+  height: 1000px;
   font-size: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -391,6 +477,9 @@ section a {
   flex-direction: column;
   padding-left: 2%;
   padding-right: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .plats__icone-coche {
@@ -403,8 +492,6 @@ section a {
 }
 
 .plats__titre {
-  -webkit-text-decoration: underline #99E2D0;
-          text-decoration: underline #99E2D0;
   font-size: 50px;
 }
 
@@ -415,7 +502,7 @@ section a {
 }
 
 .desserts {
-  height: 900px;
+  height: 1000px;
   font-size: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -441,6 +528,9 @@ section a {
   flex-direction: column;
   padding-left: 2%;
   padding-right: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .desserts__accompagnement {
@@ -449,8 +539,6 @@ section a {
 }
 
 .desserts__titre {
-  -webkit-text-decoration: underline #99E2D0;
-          text-decoration: underline #99E2D0;
   font-size: 50px;
 }
 
@@ -464,149 +552,5 @@ section a {
   display: none;
 }
 
-/*components*/
-/* btn accueil*/
-.reservation__btn {
-  color: white;
-  font-size: 40px;
-  margin-top: 60px;
-  margin-bottom: 250px;
-  padding: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 4px 4px 4px 4px silver;
-  border-radius: 60px;
-  border: none;
-}
-.reservation__btn:hover {
-  box-shadow: 4px 4px 4px 4px #9a9a9a;
-}
-
-/*btn menu*/
-.btn {
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #f2f2f2;
-  margin-right: -150px;
-}
-
-.btn-commander {
-  color: white;
-  font-size: 50px;
-  padding: 30px;
-  padding-left: 120px;
-  padding-right: 120px;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  border-radius: 60px;
-  border: none;
-}
-
-/*layouts footer*/
-/*footer*/
-.pied-de-page__logo-1 {
-  font-size: 50px;
-  padding: 5%;
-}
-
-.pied-de-page {
-  height: 600px;
-  margin-top: 0px;
-  margin-left: -50px;
-  margin-right: -100px;
-  background-color: #333333;
-  color: white;
-}
-
-/*page menu*/
-.pied-de-page-1 {
-  height: 600px;
-  margin-top: 3400px;
-  margin-left: -50px;
-  margin-right: -200px;
-  background-color: #333333;
-  color: white;
-}
-
-.pied-de-page__bloc {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  font-size: 40px;
-  padding-left: 50px;
-}
-
-.pied-de-page__bloc-1 {
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 0px;
-}
-
-.pied-de-page__bloc-2 {
-  height: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.pied-de-page__icone-1 {
-  margin-right: 50px;
-}
-
-.pied-de-page__icone-2 {
-  margin-right: 30px;
-}
-
-.pied-de-page__contact {
-  margin-top: 0px;
-}
-
-/*formulaire accueil*/
-.formulaire {
-  height: 100px;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  margin-left: -50px;
-  padding-right: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid grey;
-  background-color: lightgrey;
-}
-.formulaire__formulaire-de-recherche {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: lightgrey;
-}
-
-.formulaire__barre-de-recherche {
-  height: 50px;
-  width: 100%;
-  margin-left: 250px;
-  font-size: 40px;
-}
-
-.formulaire__champs-de-recherche {
-  height: 50px;
-  padding-left: 30px;
-  border: none;
-  background-color: lightgrey;
-}
-
-.logo {
-  margin-top: 50px;
-  padding-top: 10%;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+/*media queries*/
+/*media queries*//*# sourceMappingURL=main.css.map */

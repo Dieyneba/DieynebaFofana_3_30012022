@@ -4,22 +4,12 @@
     padding: 5%;
   }
   .pied-de-page {
-    height: 600px;
-    margin-top: 0px;
-    margin-left: -50px;
-    margin-right: -100px;
+ 
+    height: 500px;
     background-color: lighten(black, 20%);
     color: white;
   }
-  /*page menu*/
-  .pied-de-page-1 {
-    height: 600px;
-    margin-top: 3400px;
-    margin-left: -50px;
-    margin-right: -200px;
-    background-color: lighten(black, 20%);
-    color: white;
-  }
+
   .pied-de-page__bloc {
     height: 200px;
     display: flex;

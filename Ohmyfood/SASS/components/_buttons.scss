@@ -13,11 +13,13 @@
     border: none;
     &:hover {
       box-shadow: 4px 4px 4px 4px lighten(grey, 10%); 
-    }
+      opacity: 1;
+  } 
   }
+  
   /*btn menu*/
   .btn {
-    height: 300px;
+    height: 500px;
     @include flexbox-row-center;
     justify-content: center;
     background-color: lighten(lightgrey, 12%);

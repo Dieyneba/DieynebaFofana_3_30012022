@@ -1,0 +1,171 @@
+ /* rubrique page restaurant*/
+.icone-fleche {
+    font-size: 60px;
+    margin-left: -200px;
+    margin-right: 220px;
+  }
+  .image-carte-restaurant img {
+    height: 650px;
+    width: 1130px;
+    margin-top: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .restaurant__menu {
+    height: 3500px;
+    width: 100%;
+    margin-bottom: 50px; 
+    background-color: lighten(lightgrey, 12%);
+    border-radius: 95px 95px 0px 0px;
+    border-top: 2px solid grey;
+  
+    
+  }
+  .restaurant__nom {
+    @include flexbox-row-space-between;
+    width: 100%;
+    padding-right: 50px;
+    
+  } 
+  .restaurant__titre-1 {
+    font-size: 40px;
+    font-family: "Shrikhand";
+    margin-top: 70px;
+    padding-left: 60px;
+  }
+  .entrée {
+    height: 1000px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 2%;
+      padding-right: 2%;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .entrée__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .entrée__icone-coche {
+    display: none;
+    &:hover {
+      overflow: hidden;
+      color: $color-tertiary;
+      border-radius: 0px 25px 0px 25px;
+      background-color: $color-tertiary;
+      padding: 20px;
+
+    }
+  }
+  .entrée__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .entrée__titre {
+    font-size: 50px;
+  }
+  .entrée__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .plats {
+    height: 1000px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .plats__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .plats__icone-coche {
+    display: none;
+  }
+  .plats__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .plats__titre {
+    font-size: 50px;
+  }
+  .plats__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .desserts {
+    height: 1000px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    &__bloc {
+      height: 220px;
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 45px;
+      @include shadow;
+      background-color: white;
+      @include flexbox-row-space-between;
+    }
+  }
+  .desserts__bloc-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .desserts__accompagnement{
+    margin-top: -5%;
+    padding-bottom: 5%;
+  }
+  .desserts__titre {
+    font-size: 50px;
+  }
+  .desserts__prix{
+    padding-right: 6%;
+    padding-top: 8%;
+    font-weight: bold;
+  }
+  .desserts__icone-coche {
+    display: none;
+  }
+  

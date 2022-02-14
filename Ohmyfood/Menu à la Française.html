@@ -2,10 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="SASS/style.css" />
-    <link rel="stylesheet" href="CSS/Media_tablette_carte_restaurant.css" />
-    <link rel="stylesheet" href="CSS/Media_desktop_carte_restaurant.css" />
+    <link rel="stylesheet" href="SASS/main.css" />
     <script
       src="https://kit.fontawesome.com/24cde4dada.js"
       crossorigin="anonymous"
@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="logo">
-        <div><i class="icone-fleche fas fa-arrow-left"></i></div>
+        <div><a href="Accueil.html"><i class="icone-fleche fas fa-arrow-left"></i></a></div>
         <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
       </div>
     </header>
@@ -39,7 +39,9 @@
             <p class="entrée__accompagnement">Aux zestes d'orange</p>
           </div>
             <div class="entrée__prix">25€</div>
-            <div class="entrée__icone-coche"><i class="far fa-check-circle"></i></div>
+            <div>
+            <button class="entrée__icone-coche"><i class="far fa-check-circle"></i></button>
+          </div>
           </div>
           <div class="entrée__bloc">
             <div class="entrée__bloc-1">
@@ -123,7 +125,7 @@
         </div>
       </section>
     </main>
-    <footer class="pied-de-page-1">
+    <footer class="pied-de-page">
       <div class="pied-de-page__logo-1 police-du-titre">
        ohmyfood
       </div>
