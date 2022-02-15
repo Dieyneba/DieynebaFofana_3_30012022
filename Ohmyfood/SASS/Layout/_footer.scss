@@ -1,37 +1,27 @@
 /*footer*/
-.pied-de-page__logo-1 {
-    font-size: 50px;
-    padding: 5%;
-  }
   .pied-de-page {
- 
-    height: 500px;
+    font-size: 25px;
     background-color: lighten(black, 20%);
-    color: white;
+    color: white; 
+    &__logo-1 {
+      padding: 5%;
+    }
   }
-
-  .pied-de-page__bloc {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    font-size:40px;
-    padding-left: 50px;
+  .pied-de-page__bloc { 
+    font-size:20px;
+    padding-left: 5%;
+    margin: auto;
   }
   .pied-de-page__bloc-1 {
-    height: 100px;
    @include flexbox-row-center;
-    margin-top: 0px;
   }
   .pied-de-page__bloc-2 {
-    height: 30px;
    @include flexbox-row-center;
+   margin-bottom: 0px;
   }
   .pied-de-page__icone-1 {
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .pied-de-page__icone-2 {
-    margin-right: 30px;
-  }
-  .pied-de-page__contact {
-    margin-top: 0px;
+    margin-right: 10px;
   }

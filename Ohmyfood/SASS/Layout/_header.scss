@@ -1,6 +1,6 @@
 
 .logo {
-    margin-top: 50px;
-    font-size: 30px;
-    @include flexbox-center;
+margin-top: 50px;
+@include flexbox-row-justify-center;
+  
   }

@@ -33,6 +33,12 @@
     align-items: center;
     justify-content: space-between;
   }
+  @mixin flexbox-row-justify-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   @mixin shadow {
     box-shadow: 5px 5px 5px 5px lighten(grey, 25%);
   }
