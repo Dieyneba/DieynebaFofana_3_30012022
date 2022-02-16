@@ -1,1 +1,68 @@
 /*media queries*/
+@media screen and (min-width:768px) and (max-width:992px){
+   .fonctionnement__bloc-principal {
+      @include flexbox-row-space-between;
+      margin-left: 20px;
+      width: 95%;
+   } 
+   .fonctionnement__bloc {
+       margin-right:25px
+   }
+   .fonctionnement__positionnement-1 {
+    left: 10px;  
+   }
+   .fonctionnement__positionnement-2 {
+     top: 550px; 
+     left:260px
+    }
+    .fonctionnement__positionnement-3 {
+    top:550px;
+    left: 500px;
+    }
+    .fonctionnement__icone {
+        padding-left: 10px;
+    }
+    .restaurant__bloc {
+        @include flexbox-center;
+    }
+    .restaurant__card{
+        width: 95%; 
+    }
+    .restaurant__titre-nouveau-1 {
+        top:800px;
+        left:130px
+    }
+    .restaurant__titre-nouveau-2 {
+        top:1110px;
+        left:130px
+    }
+    }
+@media screen and (min-width:992px){
+  .formulaire {
+      font-size: 30px;
+  } 
+  .fonctionnement__bloc-principal {
+    @include flexbox-row-space-between;
+    margin-left: 20px;
+    width: 95%;
+ }
+ .fonctionnement__bloc {
+    margin-right:15px
+}
+ .fonctionnement__positionnement-1 {
+    left: 10px;  
+   }
+   .fonctionnement__positionnement-2 {
+     top: 550px; 
+     left:430px
+    }
+    .fonctionnement__positionnement-3 {
+    top:550px;
+    left: 840px;
+    }
+    .restaurant__bloc {
+        display: flex;
+        flex-direction: row;
+    } 
+
+}

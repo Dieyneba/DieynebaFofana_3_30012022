@@ -9,7 +9,24 @@
   border-radius: 35px;
   border: none;
   &__:hover {
-    box-shadow: 4px 4px 4px 4px #9a9a9a;
+    box-shadow: 2px 2px 2px 2px lighten($color-lightgrey, 50%);
     opacity: 1;
   }
+}
+/*btn menu*/
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin: 5% 0px;
+}
+.btn-commander {
+  color: white;
+  font-size: 1rem;
+  padding: 5% 15%;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 60px;
+  border: none;
 }

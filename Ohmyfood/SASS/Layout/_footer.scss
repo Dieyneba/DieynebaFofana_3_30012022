@@ -2,26 +2,32 @@
   .pied-de-page {
     font-size: 25px;
     background-color: lighten(black, 20%);
-    color: white; 
+    color: #f2f2f2; 
     &__logo-1 {
-      padding: 5%;
+    padding: 7%;
     }
   }
   .pied-de-page__bloc { 
     font-size:20px;
-    padding-left: 5%;
-    margin: auto;
+    padding-left: 7%;
   }
   .pied-de-page__bloc-1 {
    @include flexbox-row-center;
+    padding: 0px;
   }
   .pied-de-page__bloc-2 {
    @include flexbox-row-center;
-   margin-bottom: 0px;
+    padding: 0px;
   }
   .pied-de-page__icone-1 {
-    margin-right: 20px;
+    padding-right: 20px;
   }
   .pied-de-page__icone-2 {
-    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .pied-de-page__mentions-legales {
+    padding: 0px;
+  }
+  .pied-de-page__contact {
+    padding-bottom: 20px;
   }

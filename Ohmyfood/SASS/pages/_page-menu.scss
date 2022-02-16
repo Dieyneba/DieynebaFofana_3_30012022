@@ -1,67 +1,59 @@
  /* rubrique page restaurant*/
 .icone-fleche {
-    font-size: 60px;
-    margin-left: -200px;
-    margin-right: 220px;
+    font-size: 30px;
+    margin-right: 60px;
+    color: black;
   }
   .image-carte-restaurant img {
-    height: 650px;
-    width: 1130px;
-    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    margin-top: 30px;
     object-fit: cover;
     object-position: center;
+    position: relative;
   }
-  .restaurant__menu {
-    height: 3500px;
-    width: 100%;
-    margin-bottom: 50px; 
-    background-color: lighten(lightgrey, 12%);
-    border-radius: 95px 95px 0px 0px;
-    border-top: 2px solid grey;
-  
-    
+  .menu {
+    padding-left: 5%;
+    background-color: lighten(lightgrey, 15%);
+    border-radius: 75px 75px 0px 0px;
+    border-top: 2px solid grey; 
+    position: absolute;
+    top:430px;
+    right: 0px;
+    left: 0px;
   }
-  .restaurant__nom {
+  .menu__nom {
     @include flexbox-row-space-between;
-    width: 100%;
     padding-right: 50px;
-    
   } 
-  .restaurant__titre-1 {
-    font-size: 40px;
+  .menu__titre-restaurant-1 {
+    font-size: 12px;
     font-family: "Shrikhand";
-    margin-top: 70px;
-    padding-left: 60px;
+    padding: 10%;
   }
-  .entrée {
-    height: 1000px;
-    font-size: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 40px;
-    width: 100%;
-    &__bloc {
-      height: 220px;
-      width: 100%;
-      margin-bottom: 50px;
-      padding-left: 2%;
-      padding-right: 2%;
-      border-radius: 45px;
-      @include shadow;
-      background-color: white;
-      @include flexbox-row-space-between;
-    }
+  .menu__icone-coeur {
+    font-size: 30px; 
   }
-  .entrée__bloc-1 {
+  .menu__titre {
+    font-size: 1rem; 
+  }
+  .menu__bloc {
+    width: 90%;
+    margin-bottom: 5%;
+    padding:0% 0% 0% 4%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px lighten(grey, 40%);
+    background-color: white;
+    @include flexbox-row-space-between;
+  }
+  .menu__bloc-1 {
     display: flex;
     flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .entrée__icone-coche {
+  .menu__icone-coche {
     display: none;
     &:hover {
       overflow: hidden;
@@ -69,103 +61,17 @@
       border-radius: 0px 25px 0px 25px;
       background-color: $color-tertiary;
       padding: 20px;
-
     }
   }
-  .entrée__accompagnement{
+  .menu__accompagnement{
     margin-top: -5%;
     padding-bottom: 5%;
   }
-  .entrée__titre {
-    font-size: 50px;
+  .menu__titre {
+    font-size: 20px;
   }
-  .entrée__prix{
-    padding-right: 6%;
-    padding-top: 8%;
+  .menu__prix{
     font-weight: bold;
-  }
-  .plats {
-    height: 1000px;
-    font-size: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 100%;
-    &__bloc {
-      height: 220px;
-      width: 100%;
-      margin-bottom: 50px;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 45px;
-      @include shadow;
-      background-color: white;
-      @include flexbox-row-space-between;
-    }
-  }
-  .plats__bloc-1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .plats__icone-coche {
-    display: none;
-  }
-  .plats__accompagnement{
-    margin-top: -5%;
-    padding-bottom: 5%;
-  }
-  .plats__titre {
-    font-size: 50px;
-  }
-  .plats__prix{
-    padding-right: 6%;
-    padding-top: 8%;
-    font-weight: bold;
-  }
-  .desserts {
-    height: 1000px;
-    font-size: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 100%;
-    &__bloc {
-      height: 220px;
-      width: 100%;
-      margin-bottom: 50px;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 45px;
-      @include shadow;
-      background-color: white;
-      @include flexbox-row-space-between;
-    }
-  }
-  .desserts__bloc-1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .desserts__accompagnement{
-    margin-top: -5%;
-    padding-bottom: 5%;
-  }
-  .desserts__titre {
-    font-size: 50px;
-  }
-  .desserts__prix{
-    padding-right: 6%;
-    padding-top: 8%;
-    font-weight: bold;
-  }
-  .desserts__icone-coche {
-    display: none;
+    padding-right: 10%;
   }
   
