@@ -1,14 +1,24 @@
+@charset "UTF-8";
 /*utils*/
 /*color*/
 /*base*/
-body {
+.contenu-page {
   font-family: "Roboto";
   box-sizing: border-box;
+  position: relative;
+  min-height: 2250px;
+}
+
+.contenu-page-1 {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  min-height: 1900px;
+  position: relative;
 }
 
 .police-du-titre {
   font-family: "Shrikhand";
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -35,7 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
-  margin: 5% 0px;
+  padding: 5% 10% 42% 10%;
 }
 
 .btn-commander {
@@ -49,13 +59,29 @@ body {
 
 /*layout*/
 /*footer*/
+footer, p {
+  margin: 0px;
+}
+
+.pied-de-page-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: #333333;
+  color: #f2f2f2;
+}
+
 .pied-de-page {
-  font-size: 25px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
   background-color: #333333;
   color: #f2f2f2;
 }
 .pied-de-page__logo-1 {
-  padding: 7%;
+  padding: 6%;
 }
 
 .pied-de-page__bloc {
@@ -67,30 +93,26 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
 }
 
 .pied-de-page__bloc-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
 }
 
 .pied-de-page__icone-1 {
   padding-right: 20px;
+  font-size: 1rem;
 }
 
 .pied-de-page__icone-2 {
-  padding-right: 10px;
-}
-
-.pied-de-page__mentions-legales {
-  padding: 0px;
+  padding-right: 12px;
+  font-size: 1rem;
 }
 
 .pied-de-page__contact {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /*formulaire accueil*/
@@ -229,7 +251,7 @@ h2 {
 /*rubrique page restaurants accueil*/
 .restaurants {
   margin-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 30px;
   background-color: #f2f2f2;
   position: relative;
@@ -349,11 +371,11 @@ section a {
 
 .menu {
   padding-left: 5%;
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   border-radius: 75px 75px 0px 0px;
   border-top: 2px solid grey;
   position: absolute;
-  top: 430px;
+  top: 400px;
   right: 0px;
   left: 0px;
 }
@@ -363,17 +385,21 @@ section a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-right: 50px;
+  padding-right: 13%;
 }
 
 .menu__titre-restaurant-1 {
   font-size: 12px;
   font-family: "Shrikhand";
-  padding: 10%;
+  padding: 7%;
 }
 
 .menu__icone-coeur {
   font-size: 30px;
+}
+
+.menu__restaurant {
+  padding-bottom: 5%;
 }
 
 .menu__titre {
@@ -394,11 +420,15 @@ section a {
 }
 
 .menu__bloc-1 {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  padding-bottom: 2%;
+}
+
+.menu__intitulé {
+  margin-bottom: 0%;
+}
+
+.menu__accompagnement {
+  margin-top: 0%;
 }
 
 .menu__icone-coche {
@@ -412,18 +442,8 @@ section a {
   padding: 20px;
 }
 
-.menu__accompagnement {
-  margin-top: -5%;
-  padding-bottom: 5%;
-}
-
-.menu__titre {
-  font-size: 20px;
-}
-
 .menu__prix {
-  font-weight: bold;
-  padding-right: 10%;
+  padding: 8% 10% 0% 0%;
 }
 
 /*media queries*/

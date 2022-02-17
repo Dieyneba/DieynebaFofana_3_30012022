@@ -19,8 +19,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
-  margin: 5% 0px;
+  background-color: lighten(lightgrey, 12%);
+  padding: 5% 10% 42% 10%;
 }
 .btn-commander {
   color: white;

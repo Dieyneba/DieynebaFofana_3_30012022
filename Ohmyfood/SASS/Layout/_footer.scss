@@ -1,10 +1,24 @@
 /*footer*/
+footer, p {
+  margin: 0px;
+}
+.pied-de-page-1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: lighten(black, 20%);
+    color: #f2f2f2; 
+}
   .pied-de-page {
-    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
     background-color: lighten(black, 20%);
     color: #f2f2f2; 
     &__logo-1 {
-    padding: 7%;
+    padding: 6%;
     }
   }
   .pied-de-page__bloc { 
@@ -13,21 +27,18 @@
   }
   .pied-de-page__bloc-1 {
    @include flexbox-row-center;
-    padding: 0px;
   }
   .pied-de-page__bloc-2 {
    @include flexbox-row-center;
-    padding: 0px;
   }
   .pied-de-page__icone-1 {
     padding-right: 20px;
+    font-size: 1rem;
   }
   .pied-de-page__icone-2 {
-    padding-right: 10px;
-  }
-  .pied-de-page__mentions-legales {
-    padding: 0px;
+    padding-right: 12px;
+    font-size: 1rem;
   }
   .pied-de-page__contact {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
