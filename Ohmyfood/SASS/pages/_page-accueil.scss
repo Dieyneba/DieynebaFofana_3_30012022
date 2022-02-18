@@ -5,19 +5,23 @@
     text-align: center;
     background-color: lighten($color-lightgrey,12%);
   }
+  .reservation, h1 {
+    margin-bottom: 1%;
+  }
   .reservation__titre-1 {
     font-size: 28px;
-    padding-bottom: 0%;
   }
   .reservation__texte-1{
     font-size: 20px;
-    margin-top: 3% ;
+    padding-top: 0;
+    padding-bottom: 6%;
   }
     /*rubrique fonctionnement*/
     .fonctionnement {
       margin-top: 30px;
       width: 100%;
     }
+   
     .fonctionnement__bloc-principal {
     @include flexbox-column-space-between;
     position: relative;
@@ -68,6 +72,7 @@
       li {
         font-weight: bold;
         font-size: 17px;
+        
       }
     }
     .fonctionnement__icone {
@@ -135,11 +140,11 @@
     }
     .restaurant__icone-coeur {
       color: grey;
-      font-size: 30px;
-      
+      font-size: 28px;
     }
     .restaurant__titre {
       font-size: 18px;
+      margin-top: 4%;
       margin-bottom: 0%;
     }
     .restaurant__titre-nouveau-1 {
@@ -149,12 +154,12 @@
       background-color: $color-tertiary;
       color: darken($color-tertiary, 35%);
       font-weight: bold;
-      width: 25%;
+      width: 18%;
       padding-top: 5px;
       padding-bottom: 5px;
       position: absolute;
       top:120px;
-      left: 220px;
+      left: 280px;
     }
     .restaurant__titre-nouveau-2 {
       font-size: 15px;
@@ -163,10 +168,10 @@
       background-color: $color-tertiary;
       color: darken($color-tertiary, 35%);
       font-weight: bold;
-      width: 25%;
+      width: 18%;
       padding-top: 5px;
       padding-bottom: 5px;
       position: absolute;
       top:410px;
-      left:220px;
+      left:280px;
     }

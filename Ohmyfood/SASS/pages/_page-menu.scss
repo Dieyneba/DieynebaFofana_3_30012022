@@ -1,11 +1,12 @@
  /* rubrique page restaurant*/
-.icone-fleche {
-    font-size: 30px;
-    margin-right: 60px;
+ 
+  .icone-fleche {
+    font-size:25px;
     color: black;
+    margin-right: 60px;
   }
   .image-carte-restaurant img {
-    height: 400px;
+    height: 300px;
     width: 100%;
     margin-top: 30px;
     object-fit: cover;
@@ -18,22 +19,24 @@
     border-radius: 75px 75px 0px 0px;
     border-top: 2px solid grey; 
     position: absolute;
-    top:400px;
+    top:300px;
     right: 0px;
     left: 0px;
   }
   .menu__nom {
     @include flexbox-row-space-between;
     padding-right:13%;
-
   } 
+  .section, h1 {
+    margin: 0;
+  }
   .menu__titre-restaurant-1 {
     font-size: 12px;
     font-family: "Shrikhand";
-    padding: 7%;
+    padding: 8%;
   }
   .menu__icone-coeur {
-    font-size: 30px; 
+    font-size: 28px;
   }
   .menu__restaurant {
     padding-bottom: 5%;
@@ -54,10 +57,12 @@
     padding-bottom:2%; 
   }
   .menu__intitulé {
+    margin-top: 4%;
     margin-bottom: 0%;
   }
   .menu__accompagnement {
     margin-top: 0%;
+    padding-bottom: 2%;
   }
   .menu__icone-coche {
     display: none;
@@ -70,6 +75,7 @@
     }
   }
   .menu__prix{
-  padding: 8% 10% 0% 0%; 
+  padding: 6% 10% 0% 0%; 
+  font-weight: bold;
   }
   
