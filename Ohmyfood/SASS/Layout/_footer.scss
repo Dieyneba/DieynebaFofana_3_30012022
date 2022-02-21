@@ -3,23 +3,23 @@ footer, p {
   margin: 0px;
 }
 .pied-de-page-1 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-    background-color: lighten(black, 20%);
-    color: #f2f2f2; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: lighten(black, 20%);
+  color: #f2f2f2; 
 }
-  .pied-de-page {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-    background-color: lighten(black, 20%);
-    color: #f2f2f2; 
-    &__logo-1 {
-    padding: 6%;
-    }
+.pied-de-page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: lighten(black, 20%);
+  color: #f2f2f2; 
+  &__logo-1 {
+  padding: 6%;
+  }
   }
   .pied-de-page__bloc { 
     font-size:20px;

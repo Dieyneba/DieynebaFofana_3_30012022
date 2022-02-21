@@ -1,5 +1,6 @@
 /*media queries*/
-@media screen and (min-width:768px) and (max-width:990px){
+/*page accueil*/
+@media screen and (min-width:768px) and (max-width:992px){
 /* rubrique reservation*/
 .reservation__texte {
     padding: 5% 0% 5% 0%;
@@ -19,15 +20,15 @@ section.fonctionnement {
     margin-left:15px;
 }
 .fonctionnement__positionnement-1 {
-    top: 12px;
+    top: 27px;
     left: 2px;  
 }
 .fonctionnement__positionnement-2 {
-    top: 12px; 
+    top: 27px; 
     left:260px;
 }
 .fonctionnement__positionnement-3 {
-    top:12px;
+    top:27px;
     left: 520px;
 }
 .fonctionnement__icone {
@@ -58,16 +59,18 @@ section.fonctionnement {
     min-height: 1750px;
 }
 }
-
-@media screen and (min-width:990px) and (max-width:2000px){
+@media screen and (min-width:992px) and (max-width:1024px){
 /*base*/
 .contenu-page{
-    min-height: 1300px;
+    min-height: 1250px;
 }
 /*formulaire*/
 .formulaire__champs-de-recherche {
     font-size:20px;
     padding-left: 10px;
+}
+.formulaire__icone-localisation {
+    padding-left: 30px;
 }
 /*rubrique reservation*/
 .reservation {
@@ -82,14 +85,14 @@ section.fonctionnement {
 /*rubrique fonctionnement*/
 .fonctionnement__bloc-principal {
     @include flexbox-row-justify-center;
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
 } 
 .fonctionnement__bloc {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 230px;
+    margin-right: 30px;
     margin-left: 20px;    
 }
 li {
@@ -106,16 +109,16 @@ li {
 }
 .fonctionnement__positionnement-2 {
     top: 15px;
-    left:540px
+    left:440px
 }
 .fonctionnement__positionnement-3 {
     top:15px;
-    left: 1065px;
+    left: 870px;
 }
 /*rubrique restaurant*/
 .restaurants {
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 .restaurant__bloc-media {
     display: flex;
@@ -132,12 +135,12 @@ li {
 }
 .restaurant__titre-nouveau-1 {
     top: 140px;
-    left:260px;
+    left:220px;
     width: 6%;
 }
 .restaurant__titre-nouveau-2 {
     top: 140px; 
-    left: 660px;
+    left: 580px;
     width: 6%;   
 }
 /*footer*/
@@ -158,4 +161,186 @@ li {
 .pied-de-page__contact {
     padding-bottom: 0px;
 }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+/*rubrique fonctionnement*/
+.fonctionnement__positionnement-1 {
+    top: 15px;
+    left: 10px;  
+}
+.fonctionnement__positionnement-2 {
+    top: 15px;
+    left:320px
+}
+.fonctionnement__positionnement-3 {
+    top:15px;
+    left: 620px;
+}
+/*rubrique restaurant*/
+.restaurant__titre-nouveau-1 {
+    top: 150px;
+    left: 160px;
+}
+.restaurant__titre-nouveau-2 {
+    top: 150px;
+    left: 420px;
+}
+}
+@media screen and (min-width:1440px) {
+/*base*/
+.contenu-page{
+    min-height: 1400px;
+}
+/*rubrique fonctionnement*/
+.fonctionnement__bloc-principal {
+    @include flexbox-row-justify-center;
+    margin-left: 30px;
+}
+.fonctionnement__bloc {
+    margin-right: 60px;
+}
+.fonctionnement__positionnement-1 {
+    top: 15px;
+    left: 0px;  
+}
+.fonctionnement__positionnement-2 {
+    top: 15px;
+    left:460px
+}
+.fonctionnement__positionnement-3 {
+    top:15px;
+    left: 930px;
+}
+/*restaurant*/
+.restaurant__bloc-media {
+    display: flex;
+    width: 100%;
+}
+.restaurant__titre-nouveau-1 {
+    top: 150px;
+    left: 250px;
+    width: 6%;
+}
+.restaurant__titre-nouveau-2 {
+    top:150px;
+    left: 610px;
+    width: 6%;
+}
+/*footer*/
+.pied-de-page__bloc { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+.pied-de-page__contact {
+    padding-bottom: 0px;
+}
+}
+
+
+
+/*page menu*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+/*base*/
+.contenu-page-1 {
+    min-height: 2150px;    
+}
+.contenu-page-1-la-note-enchantee {
+    min-height: 2250px;
+}
+/*page menu restaurant*/
+.menu__titre {
+    margin-left: 4%;
+}
+.menu__nom {
+    padding-right: 15%;
+}
+.menu__prix {
+    padding-top: 3%;    
+}
+.pied-de-page__logo-1 {
+    padding: 4% 0% 4% 7%;
+}
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+/*base*/
+.contenu-page-1 {
+    min-height: 2300px;    
+}
+.contenu-page-1-la-note-enchantee {
+    min-height: 2400px;
+}
+/*page menu restaurant*/
+.menu__titre {
+    margin-left: 4%;
+}
+.menu__nom {
+    padding-right: 15%;
+}
+.menu__prix {
+    padding-top: 3%;    
+}
+}
+@media screen and (min-width:1440px){
+ /*base*/
+.contenu-page-1 {
+    min-height: 1400px;    
+}
+.contenu-page-1-la-note-enchantee {
+    min-height: 1500px;
+}
+/*page menu restaurant*/
+.menu-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 95%;
+}
+div.menu__bloc {
+    padding-left: 5%;
+}
+.menu__bloc {
+    height: 100px;
+    width: 100%;
+    padding: 0% 12% 0% 15%;
+}
+.menu__bloc-1 {
+    font-size: 18px;
+    width: 100%;
+}
+.menu__titre {
+    margin-left: 4%;
+}
+.menu__nom {
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-right: 0;
+}
+.menu__restaurant {
+    width: 26%;
+}
+.menu__titre-restaurant-1 {
+    font-size: 18px;
+    padding-top: 5%;
+    padding-right: 2%;
+}
+.menu__prix{
+    padding: 8% 5% 0% 2%; 
+    font-weight: bold;
+    }
+/*btn menu*/
+.btn {
+    padding-bottom: 20%;
+}
+.btn-commander {
+    padding: 2% 7%;
+    font-size: 20px;
+} 
 }

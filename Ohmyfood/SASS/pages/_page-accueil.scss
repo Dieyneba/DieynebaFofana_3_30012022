@@ -1,3 +1,23 @@
+  /*loading-spinner*/
+  .load {
+    display: none;
+    margin: auto;
+    margin-top: 100px;
+    width: 80px;
+    height: 80px;
+    border: 16px solid grey;
+    border-radius:50%;
+    border-top-color: $color-primary;
+    border-bottom-color: $color-secondary;
+    animation: loader linear  3s;
+  }
+  @keyframes loader {
+    0%{ transform:rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
   /*rubrique reservation page accueil*/
   .reservation {
     padding-bottom: 5%;
@@ -159,7 +179,7 @@
       padding-bottom: 5px;
       position: absolute;
       top:120px;
-      left: 280px;
+      left: 250px;
     }
     .restaurant__titre-nouveau-2 {
       font-size: 15px;
@@ -173,5 +193,5 @@
       padding-bottom: 5px;
       position: absolute;
       top:410px;
-      left:280px;
+      left:250px;
     }
