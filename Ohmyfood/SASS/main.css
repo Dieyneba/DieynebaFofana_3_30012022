@@ -89,6 +89,7 @@ footer, p {
 }
 .pied-de-page__logo-1 {
   padding: 6%;
+  opacity: 1.5;
 }
 
 .pied-de-page__bloc {
@@ -155,21 +156,57 @@ footer, p {
 
 /*pages*/
 /*loading-spinner*/
-.load {
-  display: none;
-  margin: auto;
-  margin-top: 100px;
-  width: 80px;
-  height: 80px;
-  border: 16px solid grey;
-  border-radius: 50%;
-  border-top-color: #9356DC;
-  border-bottom-color: #FF79DA;
-  -webkit-animation: loader linear 3s;
-          animation: loader linear 3s;
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  opacity: 1;
+  transform-origin: bottom;
+  -webkit-animation: loader 1s both;
+          animation: loader 1s both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 16px solid;
+  border-radius: 50%;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-left-color: #99E2D0;
+  border-right-color: #99E2D0;
+  -webkit-animation: spinner 3s infinite;
+          animation: spinner 3s infinite;
+}
+
+@-webkit-keyframes spinner {
   0% {
     transform: rotate(0deg);
   }
@@ -178,7 +215,7 @@ footer, p {
   }
 }
 
-@keyframes loader {
+@keyframes spinner {
   0% {
     transform: rotate(0deg);
   }
@@ -358,6 +395,10 @@ section a {
 .restaurant__icone-coeur {
   color: grey;
   font-size: 28px;
+}
+
+.fas_fa-heart {
+  color: red;
 }
 
 .restaurant__titre {

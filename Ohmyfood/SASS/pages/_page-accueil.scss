@@ -1,22 +1,42 @@
   /*loading-spinner*/
-  .load {
-    display: none;
-    margin: auto;
-    margin-top: 100px;
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;bottom: 0;left: 0;right: 0;
+    height: 100%;
+    background-color:white;
+    z-index: 1;
+    opacity: 1; 
+    transform-origin: bottom;
+    animation: loader  1s both ;
+    animation-delay: 2s;
+  }
+  @keyframes loader {
+    0%{ transform:scale(1);
+    }
+    100%{
+      transform: scale(0);
+    }
+  }
+  .spinner {
     width: 80px;
     height: 80px;
-    border: 16px solid grey;
+    border: 16px solid;
     border-radius:50%;
     border-top-color: $color-primary;
     border-bottom-color: $color-secondary;
-    animation: loader linear  3s;
+    border-left-color: $color-tertiary;
+    border-right-color: $color-tertiary;
+    animation: spinner 3s infinite;
   }
-  @keyframes loader {
+  @keyframes spinner {
     0%{ transform:rotate(0deg);
     }
     100%{
       transform: rotate(360deg);
-    }
+    } 
   }
   /*rubrique reservation page accueil*/
   .reservation {
@@ -162,6 +182,9 @@
       color: grey;
       font-size: 28px;
     }
+   .fas_fa-heart {
+     color: red;
+   }
     .restaurant__titre {
       font-size: 18px;
       margin-top: 4%;
