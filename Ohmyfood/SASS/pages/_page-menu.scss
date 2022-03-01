@@ -4,6 +4,7 @@
     font-size:25px;
     color: black;
   }
+
   .image-carte-restaurant img {
     height: 300px;
     width: 100%;
@@ -39,18 +40,33 @@
   }
   .menu__restaurant {
     padding-bottom: 5%;
+    
   }
   .menu__titre {
     font-size: 20px; 
+    position: relative;
+    &::after {
+      content:"";
+      border: 2px solid $color-tertiary;
+      border-bottom:  $color-tertiary;
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      width: 10%;
+    }
   }
   .menu__bloc {
-    width: 90%;
+    width: 85%;
     margin-bottom: 5%;
     padding:0% 0% 0% 4%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px lighten(grey, 40%);
     background-color: white;
     @include flexbox-row-space-between;
+    overflow: hidden;
+    &:hover .menu__icone-coche{ 
+      margin-right: 0;
+      }
   }
   .menu__bloc-1 {
     padding-bottom:2%;
@@ -66,26 +82,57 @@
   .menu__accompagnement {
     margin-top: 0%;
     padding-bottom: 2%;
-    width: 100%;
+    width: 90%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .menu__icone-coche {
-    display: none;
-    &:active {
-      overflow: hidden;
-      color: $color-tertiary;
-      border-radius: 0px 25px 0px 25px;
-      background-color: $color-tertiary;
-      padding: 2%;
-      cursor: pointer;
-      transform: translateY(100px,0);
-      transition: transform 330ms ease-in-out;
+  i.far.fa-check-circle {
+    font-size: 30px;
+    background-color: white;
+    color: $color-tertiary;
+    border-radius: 20px;
+    animation: spin 1s;
+  }
+  @keyframes spin {
+    0% { transform: rotate(-200deg);
     }
+    100% {transform: rotate(0deg);
+    } 
   }
-  .menu__prix{
-  padding: 6% 10% 0% 0%; 
+  .menu__icone-coche {
+    margin-right: -22%;
+    font-size: 25px;
+    background-color: $color-tertiary;
+    padding: 6.5%;
+    border-radius: 0px 15px 15px 0px;  
+    transition: margin-right 0.6s;
+  }
+.menu__prix{
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: 6%;
   font-weight: bold;
+}
+.menu__animation-1{
+  animation: defilement 2s both;
+  animation-delay: 150ms;
+}
+.menu__animation-2{
+  animation: defilement 2s both;
+  animation-delay: 300ms;
+}
+.menu__animation-3{
+  animation: defilement 2s both;
+  animation-delay: 400ms;
+}
+@keyframes defilement {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom;
   }
-  
+  100% {
+    transform: scale(1);
+    transform-origin: bottom;
+  }
+}

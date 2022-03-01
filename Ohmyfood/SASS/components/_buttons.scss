@@ -8,10 +8,7 @@
   box-shadow: 4px 4px 4px 4px silver;
   border-radius: 35px;
   border: none;
-  &__:hover {
-    box-shadow: 2px 2px 2px 2px lighten($color-lightgrey, 50%);
-    opacity: 1;
-  }
+
 }
 /*btn menu*/
 .btn {
