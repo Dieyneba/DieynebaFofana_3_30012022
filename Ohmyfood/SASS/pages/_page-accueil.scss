@@ -94,7 +94,7 @@ h1 {
   }
 }
 .fonctionnement__numero {
-  border-radius: 30px;
+  border-radius: 50%;
   padding: 2px 2px;
   font-size: 10px;
   width: 3%;
@@ -190,10 +190,16 @@ section a {
   justify-content: flex-start;
   padding-left: 5%;
 }
-.fas.fa-heart { 
+.icone-coeur-1 {
+  color: black;
+  font-size: 25px;
+  position: relative;
+}
+.icone-coeur-2 { 
   font-size: 10px;
-  position: sticky;
-  right: 20.3%; 
+  position: absolute;
+  top:44%;
+  right: 30%; 
   color:pink;
   &:hover{
     color: transparent;
@@ -201,16 +207,11 @@ section a {
     background-clip: text;
     -webkit-background-clip: text;
     transition: all 3000ms ease-in-out;
-    transform: scale(2.2);
+    transform: scale(2);
     transform-origin: bottom;
   }
 }
-.far.fa-heart {
-  color: black;
-  font-size: 25px;
-  position: relative;
 
-}
 .restaurant__titre {
   font-size: 18px;
   margin-top: 4%;

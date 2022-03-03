@@ -23,20 +23,26 @@ section.fonctionnement {
 }
 .fonctionnement__positionnement-1 {
     top: 27px;
-    left: 2px;  
+    left: 2px; 
+    width: 2%; 
 }
 .fonctionnement__positionnement-2 {
     top: 27px; 
     left:260px;
+    width: 2%;
 }
 .fonctionnement__positionnement-3 {
     top:27px;
     left: 520px;
+    width: 2%;
 }
 .fonctionnement__icone {
     padding-left: 10px;
 }
 /*rubrique restaurant*/
+.restaurant.restaurant__icone-coeur.icone-coeur-media{
+    right: 9%;
+}
 .restaurant__bloc {
     display: flex;
 }
@@ -52,7 +58,6 @@ section.fonctionnement {
 .restaurants img {
     height: 250px;
 }
-
 .restaurant__titre-nouveau-1 {
     top: 150px;
     left: 220px;
@@ -63,7 +68,8 @@ section.fonctionnement {
     left: 220px;
     width: 15%;
 }
-/*icone-coeur*/
+
+
 
 /*base*/
 .contenu-page{

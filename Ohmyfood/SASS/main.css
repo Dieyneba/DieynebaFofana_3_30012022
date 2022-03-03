@@ -21,7 +21,7 @@
 .contenu-page-1-la-note-enchantee {
   font-family: "Roboto";
   box-sizing: border-box;
-  min-height: 1750px;
+  min-height: 2000px;
   max-width: 3200px;
   position: relative;
 }
@@ -290,7 +290,7 @@ h1 {
 }
 
 .fonctionnement__numero {
-  border-radius: 30px;
+  border-radius: 50%;
   padding: 2px 2px;
   font-size: 10px;
   width: 3%;
@@ -403,27 +403,27 @@ section a {
   padding-left: 5%;
 }
 
-.fas.fa-heart {
+.icone-coeur-1 {
+  color: black;
+  font-size: 25px;
+  position: relative;
+}
+
+.icone-coeur-2 {
   font-size: 10px;
-  position: -webkit-sticky;
-  position: sticky;
-  right: 20.3%;
+  position: absolute;
+  top: 44%;
+  right: 30%;
   color: pink;
 }
-.fas.fa-heart:hover {
+.icone-coeur-2:hover {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 3000ms ease-in-out;
-  transform: scale(2.2);
+  transform: scale(2);
   transform-origin: bottom;
-}
-
-.far.fa-heart {
-  color: black;
-  font-size: 25px;
-  position: relative;
 }
 
 .restaurant__titre {
@@ -466,6 +466,14 @@ section a {
 .icone-fleche {
   font-size: 25px;
   color: black;
+  margin-top: 50px;
+}
+
+.fleche-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .image-carte-restaurant img {
@@ -482,10 +490,10 @@ section a {
 .menu {
   padding-left: 5%;
   background-color: #f2f2f2;
-  border-radius: 75px 75px 0px 0px;
+  border-radius: 55px 55px 0px 0px;
   border-top: 2px solid grey;
   position: absolute;
-  top: 300px;
+  top: 350px;
   right: 0px;
   left: 0px;
 }
@@ -495,7 +503,7 @@ section a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-right: 14%;
+  padding-right: 10%;
 }
 
 .section, h1 {
@@ -505,11 +513,7 @@ section a {
 .menu__titre-restaurant-1 {
   font-size: 12px;
   font-family: "Shrikhand";
-  padding: 7% 0% 5% 4%;
-}
-
-.menu__icone-coeur {
-  font-size: 28px;
+  padding: 10% 0% 5% 4%;
 }
 
 .menu__restaurant {
@@ -531,7 +535,7 @@ section a {
 }
 
 .menu__bloc {
-  width: 85%;
+  width: 92%;
   margin-bottom: 5%;
   padding: 0% 0% 0% 4%;
   border-radius: 15px;
@@ -563,7 +567,7 @@ section a {
 .menu__accompagnement {
   margin-top: 0%;
   padding-bottom: 2%;
-  width: 90%;
+  width: 95%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -688,16 +692,19 @@ i.far.fa-check-circle {
   .fonctionnement__positionnement-1 {
     top: 27px;
     left: 2px;
+    width: 2%;
   }
 
   .fonctionnement__positionnement-2 {
     top: 27px;
     left: 260px;
+    width: 2%;
   }
 
   .fonctionnement__positionnement-3 {
     top: 27px;
     left: 520px;
+    width: 2%;
   }
 
   .fonctionnement__icone {
@@ -705,6 +712,10 @@ i.far.fa-check-circle {
   }
 
   /*rubrique restaurant*/
+  .restaurant.restaurant__icone-coeur.icone-coeur-media {
+    right: 9%;
+  }
+
   .restaurant__bloc {
     display: flex;
   }
@@ -737,7 +748,6 @@ i.far.fa-check-circle {
     width: 15%;
   }
 
-  /*icone-coeur*/
   /*base*/
   .contenu-page {
     min-height: 1750px;
