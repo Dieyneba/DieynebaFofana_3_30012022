@@ -5,12 +5,18 @@ footer, p {
 footer a {
   text-decoration: none;
 }
+footer.pied-de-page {
+  padding-top: 5%;
+  margin-top: 100px;
+}
 .pied-de-page-1 {
   position: absolute;
   bottom: 0;
   width: 100%;
   font-size: 20px;
   background-color: lighten(black, 20%);
+  opacity: 1;
+  padding-top: 6%;
   color: #f2f2f2; 
 }
 .pied-de-page {
@@ -19,32 +25,31 @@ footer a {
   width: 100%;
   font-size: 20px;
   background-color: lighten(black, 20%);
-  color: #f2f2f2; 
+  opacity: 1;
+  color:#f2f2f2; 
   &__logo-1 {
-  padding: 6%;
-  opacity: 1.5;
+  padding: 1% 6% 6% 6%;
   }
   }
-
-  .pied-de-page__bloc { 
-    font-size:20px;
-    padding-left: 7%;
+.pied-de-page__bloc { 
+  font-size:20px;
+  padding-left: 7%;
   }
-  .pied-de-page__bloc-1 {
+.pied-de-page__bloc-1 {
+  @include flexbox-row-center;
+  }
+.pied-de-page__bloc-2 {
    @include flexbox-row-center;
   }
-  .pied-de-page__bloc-2 {
-   @include flexbox-row-center;
-  }
-  .pied-de-page__icone-1 {
+.pied-de-page__icone-1 {
     padding-right: 20px;
     font-size: 1rem;
   }
-  .pied-de-page__icone-2 {
+.pied-de-page__icone-2 {
     padding-right: 12px;
     font-size: 1rem;
   }
-  .pied-de-page__contact {
+.pied-de-page__contact {
     padding-bottom: 30px;
     color: white;
   }

@@ -5,19 +5,20 @@
   padding: 10px 20px 20px 40px;
   margin-bottom: 30px;
   background-image: linear-gradient(to top,$color-primary,$color-secondary);
-  box-shadow: 4px 4px 4px 4px silver;
+  box-shadow: 4px 4px 4px 4px lighten($color-lightgrey, 2%);
   border-radius: 35px;
   border: none;
 
 }
 /*btn menu*/
 .btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flexbox-row-justify-center;
   background-color: lighten(lightgrey, 12%);
-  padding: 5% 10% 50% 10%;
+  padding: 5% 10% 85% 10%;
+  &:hover .btn-commander {
+    box-shadow: 3px 3px 3px 3px silver;
+    opacity: 0.7;
+  }
 }
 .btn-commander {
   color: white;

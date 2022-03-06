@@ -43,14 +43,14 @@
   }
   .menu__restaurant {
     padding-bottom: 5%;
-    
   }
   .menu__titre {
-    font-size: 20px; 
+    font-size: 18px;
+    padding-bottom: 10px; 
     position: relative;
     &::after {
       content:"";
-      border: 2px solid $color-tertiary;
+      border: 3px solid $color-tertiary;
       border-bottom:  $color-tertiary;
       position: absolute;
       top: 30px;
@@ -67,9 +67,13 @@
     background-color: white;
     @include flexbox-row-space-between;
     overflow: hidden;
+    
     &:hover .menu__icone-coche{ 
-      margin-right: 0;
+      display: inline-block;
       }
+    &:hover i.far.fa-check-circle{
+      animation: spin 600ms;
+    } 
   }
   .menu__bloc-1 {
     padding-bottom:2%;
@@ -80,37 +84,46 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+    
   }
   .menu__accompagnement {
     margin-top: 0%;
     padding-bottom: 2%;
-    width: 95%;
+    width:100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+     
   }
   i.far.fa-check-circle {
     font-size: 30px;
     background-color: white;
     color: $color-tertiary;
-    border-radius: 20px;
-    animation: spin 1s;
+    border-radius: 50%;
   }
   @keyframes spin {
-    0% { transform: rotate(-200deg);
+    0% { transform: rotate(360deg);
     }
     100% {transform: rotate(0deg);
     } 
   }
   .menu__icone-coche {
-    margin-right: -22%;
+    display: none;
     font-size: 25px;
     background-color: $color-tertiary;
-    padding: 6.5%;
+    padding: 5%;
     border-radius: 0px 15px 15px 0px;  
-    transition: margin-right 0.6s;
+    animation:coche 200ms;
   }
+@keyframes coche {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .menu__prix{
   padding-top: 5%;
   margin-left: auto;
