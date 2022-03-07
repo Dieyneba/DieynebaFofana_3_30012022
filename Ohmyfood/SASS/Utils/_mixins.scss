@@ -1,9 +1,14 @@
 
-@mixin flexbox-center {
+  @mixin base {
+  font-family: "roboto";
+  box-sizing: border-box;
+  position: relative;
+ }
+  @mixin flexbox-center {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+ }
   @mixin flexblox-column {
     display: flex;
     flex-direction: column;
@@ -39,5 +44,24 @@
     align-items: center;
     justify-content: center;
   }
- 
-  
+ @mixin background-linear {
+  background-image: linear-gradient(to top, $color-primary, $color-secondary);
+   }
+  @mixin sizepadding($padding){
+    padding:($padding);
+  }
+  @mixin box-shadow ($shadow) {
+    box-shadow:($shadow);
+  }
+  @mixin border-radius ($border) {
+    border-radius:($border);
+  }
+  @mixin position {
+    position: absolute;
+    bottom: 0;
+  }
+  @mixin position-items($position,$top,$left) {
+    position:($position);
+    top:($top);
+    left:($left);
+  }

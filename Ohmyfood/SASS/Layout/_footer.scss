@@ -10,8 +10,7 @@ footer.pied-de-page {
   margin-top: 100px;
 }
 .pied-de-page-1 {
-  position: absolute;
-  bottom: 0;
+ @include position;
   width: 100%;
   font-size: 20px;
   background-color: lighten(black, 20%);
@@ -20,15 +19,14 @@ footer.pied-de-page {
   color: #f2f2f2; 
 }
 .pied-de-page {
-  position: absolute;
-  bottom: 0;
+  @include position;
   width: 100%;
   font-size: 20px;
   background-color: lighten(black, 20%);
   opacity: 1;
   color:#f2f2f2; 
   &__logo-1 {
-  padding: 1% 6% 6% 6%;
+  @include sizepadding (1% 6% 6% 6%);
   }
   }
 .pied-de-page__bloc { 

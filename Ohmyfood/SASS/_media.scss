@@ -7,14 +7,14 @@
 }
 /* rubrique reservation*/
 .reservation__texte {
-    padding: 5% 0% 5% 0%;
+    @include sizepadding (5% 0% 5% 0%);
 }
 /*rubrique fonctionnement*/
 section.fonctionnement {
-    padding: 0;
+    @include sizepadding (0);
 }
 .fonctionnement, ul {
-    padding: 5%;
+    @include sizepadding (5%);
 }
 .fonctionnement__bloc-principal {
     @include flexbox-row-space-between;
@@ -95,7 +95,7 @@ footer.pied-de-page {
 .reservation {
     padding-bottom: 2%;
     &__bloc {
-    padding: 2%;  
+    @include sizepadding (2%);  
 }
 }
 .reservation__titre-1 {
@@ -200,7 +200,7 @@ li {
     width: 2%;
 }
 ul {
-    padding: 10px;
+    @include sizepadding (10px);
 }
 /*rubrique restaurant*/
 .restaurant__titre-nouveau-1 {
@@ -384,7 +384,7 @@ footer P {
     padding-right: 12%;
 }
 .menu__prix {
-    padding: 3% 2%;    
+    @include sizepadding (3% 2%);    
 }
 }
 
@@ -421,64 +421,53 @@ footer P {
 @media screen and (min-width:1440px) and (max-width:2560px){
  /*base*/
 .contenu-page-1 {
-    min-height: 1500px;    
+    min-height: 1400px;    
 }
 .contenu-page-1-la-note-enchantee {
-    min-height: 1550px;
+    min-height: 1500px;
 }
 /*page menu restaurant*/
 .menu-1 {
-    @include flexbox-row-space-between;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
     width: 98%;
-}
-.menu-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
 }
 .menu__bloc {
     width: 100%;
+    &:hover .menu__icone-coche {
+    display: inline-block;
+}
 }
 .menu__bloc-1 {
     font-size: 18px;
     width: 100%;
 }
+.menu__nom {
+    @include flexbox-row-justify-center;
+}
 .menu__titre {
     margin-left: 4%;
-    width: 80%;
-}
-.menu__nom {
-   @include flexbox-row-justify-center; 
+    width: 100%;
 }
 .menu__restaurant {
-    width: 26%;
+    width: 30%;
 }
 .menu__titre-restaurant-1 {
     font-size: 18px;
     padding-top: 5%;
-    padding-right: 2%;
+    padding-right: 2%;   
 }
 .menu__intitulé {
-    &:hover {
     width: 70%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;   
-    } 
 }
 .menu__accompagnement {
-    &:hover {
-    width: 40%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;   
-    }
-   
+    width: 70%;
 }
-.menu__prix {
-    margin-right: 2%;
+.menu__icone-coche {
+    @include sizepadding (6%);  
 }
+
 /*btn menu*/
 .btn {
     padding-bottom: 20%;
@@ -490,5 +479,14 @@ footer P {
 /*footer*/
 .pied-de-page-1 {
     display: flex;
+}
+}
+@media screen and (min-width:2560px){
+/*base*/
+.contenu-page-1 {
+    min-height: 1850px;    
+}
+.contenu-page-1-la-note-enchantee {
+    min-height: 2100px;
 }
 }

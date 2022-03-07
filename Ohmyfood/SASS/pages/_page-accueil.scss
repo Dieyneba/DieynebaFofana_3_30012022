@@ -26,7 +26,7 @@
   width: 80px;
   height: 80px;
   border: 16px solid;
-  border-radius: 50%;
+  @include border-radius (50%);
   border-top-color: $color-primary;
   border-bottom-color: $color-secondary;
   border-left-color: $color-tertiary;
@@ -50,7 +50,7 @@
 }
 .reservation__bloc {
   &:hover .reservation__btn {
-    box-shadow: 3px 3px 3px 3px silver;
+    @include box-shadow (3px 3px 3px 3px silver);
     opacity: 0.7;
   }
 }
@@ -76,8 +76,8 @@ h1 {
   position: relative;
 }
 .fonctionnement__bloc {
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px lighten($color-lightgrey, 10%);
+  @include border-radius (15px);
+  @include box-shadow (3px 3px 3px 3px lighten($color-lightgrey, 10%));
   background-color: lighten(#f2f2f2, 2%);
   @include flexbox-row-center;
   width: 90%;
@@ -90,8 +90,8 @@ h1 {
   }
 }
 .fonctionnement__numero {
-  border-radius: 50%;
-  padding: 2px 2px;
+  @include border-radius (50%);
+  @include sizepadding (2px 2px);
   font-size: 10px;
   width: 3%;
   border: 2px solid $color-primary;
@@ -104,19 +104,13 @@ h1 {
   justify-content: left;
 }
 .fonctionnement__positionnement-1 {
-  position: absolute;
-  top: 20px;
-  left: 10px;
+  @include position-items (absolute,20px,10px);
 }
 .fonctionnement__positionnement-2 {
-  position: absolute;
-  top: 102px;
-  left: 10px;
+  @include position-items (absolute,102px,10px);
 }
 .fonctionnement__positionnement-3 {
-  position: absolute;
-  top: 185px;
-  left: 10px;
+  @include position-items (absolute,185px,10px);
 }
 ul {
   list-style: none;
@@ -128,8 +122,7 @@ ul {
 .fonctionnement__icone {
   padding-left: 12%;
   font-size: 18px;
-  color: grey;
-  
+  color: grey; 
 }
 h2 {
   margin-left: 15px;
@@ -150,8 +143,8 @@ section a {
   height: 260px;
   width: 95%;
   margin-bottom: 10px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px 5px lighten(grey, 40%);
+  @include border-radius(15px);
+  @include box-shadow(5px 5px 5px 5px lighten(grey, 40%));
   background-color: white;
   margin-top: 30px;
   margin-left: 10px;
@@ -162,7 +155,7 @@ section a {
   height: 180px;
   object-fit: cover;
   object-position: center bottom;
-  border-radius: 15px 15px 0px 0px;
+  @include border-radius(15px 15px 0px 0px);
   box-sizing: border-box;
 }
 .restaurant__card-image img {
@@ -194,14 +187,14 @@ section a {
   top:44%;
   right: 30%; 
   color:transparent;
-  &:active{
-  color: transparent;
-  background-image: linear-gradient($color-primary, $color-secondary);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 1200ms ease-in-out;
-  transform: scale(2);
-  transform-origin: bottom;
+    &:active{
+    color: transparent;
+    @include background-linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 1200ms ease-in-out;
+    transform: scale(2);
+    transform-origin: bottom;
   }
 }
 .restaurant__titre {
@@ -219,9 +212,7 @@ section a {
   width: 18%;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: absolute;
-  top: 120px;
-  left: 250px;
+  @include position-items (absolute,120px,250px);
 }
 .restaurant__titre-nouveau-2 {
   font-size: 15px;
@@ -233,7 +224,5 @@ section a {
   width: 18%;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: absolute;
-  top: 410px;
-  left: 250px;
+  @include position-items (absolute,410px,250px);
 }
