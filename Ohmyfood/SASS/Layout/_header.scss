@@ -1,6 +1,6 @@
 /*page accueil*/
 .logo {
 margin-top: 50px;
-@include flexbox-row-justify-center; 
+@include flexbox-row (row,center,center); 
   }
 

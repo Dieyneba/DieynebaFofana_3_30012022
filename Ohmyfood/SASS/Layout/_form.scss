@@ -2,7 +2,7 @@
 .formulaire {
   height: 50px;
   margin-top: 20px;
-  @include flexbox-row-justify-center;
+  @include flexbox-row (row,center,center);
   border-top: 2px solid grey;
   background-color: $color-lightgrey;
   &__formulaire-de-recherche {

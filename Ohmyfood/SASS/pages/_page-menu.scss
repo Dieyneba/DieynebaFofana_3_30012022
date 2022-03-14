@@ -2,14 +2,10 @@
   .icone-fleche {
     font-size:25px;
     color: black;
-    margin-top: 50px;
-    
+    margin-top: 50px;  
   }
   .fleche-logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    @include flexbox-row (row,center,space-around);
   }
   .image-carte-restaurant img {
     height: 300px;
@@ -30,7 +26,7 @@
     left: 0px;
   }
   .menu__nom {
-    @include flexbox-row-space-between;
+    @include flexbox-row (row,center,space-between);
     padding-right:10%;
   } 
   .section, h1 {
@@ -63,7 +59,7 @@
     border-radius: 15px;
     @include box-shadow (5px 5px 5px 5px lighten(grey, 40%));
     background-color: white;
-    @include flexbox-row-space-between;
+    @include flexbox-row (row,center,space-between);
     overflow: hidden;  
     &:active .menu__icone-coche{ 
     display: inline-block;
@@ -76,17 +72,13 @@
     margin-top: 4%;
     margin-bottom: 0%;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+   @include ellipsis;
   }
   .menu__accompagnement {
     margin-top: 0%;
     padding-bottom: 2%;
     width:95%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   @include ellipsis;
      
   }
   i.far.fa-check-circle {

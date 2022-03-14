@@ -4,45 +4,32 @@
   box-sizing: border-box;
   position: relative;
  }
+  @mixin flexbox-row ($row,$align,$justify-content-row) {
+    display: flex; 
+    flex-direction: $row;
+    align-items: $align;
+    justify-content:$justify-content-row;
+  }
+  @mixin flexbox-column ($column,$align,$justify-content-column){
+    display: flex; 
+    flex-direction: $column;
+    align-items: $align;
+    justify-content:$justify-content-column;
+  }
   @mixin flexbox-center {
     display: flex;
     align-items: center;
     justify-content: center;
  }
-  @mixin flexblox-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  @mixin flexbox-column-space-between {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
   @mixin flexbox-row-center {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  @mixin flexbox-row-space-evenly {
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; 
-  }
-  @mixin flexbox-row-space-between {
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  @mixin flexbox-row-justify-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  @mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
  @mixin background-linear {
   background-image: linear-gradient(to top, $color-primary, $color-secondary);

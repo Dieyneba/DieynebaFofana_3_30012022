@@ -12,7 +12,7 @@
 }
 /*btn menu*/
 .btn {
-  @include flexbox-row-justify-center;
+  @include flexbox-row (row,center,center);
   background-color: lighten(lightgrey, 12%);
   @include sizepadding (5% 10% 85% 10%);
   &:hover .btn-commander {

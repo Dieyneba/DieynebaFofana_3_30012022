@@ -43,8 +43,9 @@
 }
 /*rubrique reservation page accueil*/
 .reservation {
+  padding-top:5% ;
   padding-bottom: 5%;
-  @include flexbox-column-space-between;
+  @include flexbox-column (column,center,space-between);
   text-align: center;
   background-color: lighten($color-lightgrey, 12%);
 }
@@ -56,7 +57,7 @@
 }
 .reservation,
 h1 {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 .reservation__titre-1 {
   font-size: 28px;
@@ -72,16 +73,18 @@ h1 {
   width: 100%;
 }
 .fonctionnement__bloc-principal {
-  @include flexbox-column-space-between;
-  position: relative;
+  @include flexbox-column (column,center,space-evenly);
+ 
 }
 .fonctionnement__bloc {
+  position: relative;
   @include border-radius (15px);
   @include box-shadow (3px 3px 3px 3px lighten($color-lightgrey, 10%));
   background-color: lighten(#f2f2f2, 2%);
-  @include flexbox-row-center;
-  width: 90%;
+  @include flexbox-row (row,center,left);
+  width: 80%;
   margin-bottom: 30px;
+  @include sizepadding (5%);
   &:hover {
     background-color: lighten($color-primary, 37%);
   }
@@ -91,38 +94,25 @@ h1 {
 }
 .fonctionnement__numero {
   @include border-radius (50%);
-  @include sizepadding (2px 2px);
+  @include sizepadding (2px 3px);
   font-size: 10px;
   width: 3%;
   border: 2px solid $color-primary;
   background-color: $color-primary;
   color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-}
-.fonctionnement__positionnement-1 {
-  @include position-items (absolute,20px,10px);
-}
-.fonctionnement__positionnement-2 {
-  @include position-items (absolute,102px,10px);
-}
-.fonctionnement__positionnement-3 {
-  @include position-items (absolute,185px,10px);
-}
-ul {
-  list-style: none;
-  li {
-    font-weight: bold;
-    font-size: 17px;
-  }
+  @include flexbox-column (column,center,left);
+  position: absolute; 
+  left: -10px;
 }
 .fonctionnement__icone {
-  padding-left: 12%;
+  padding-left:8%;
+  padding-right:8%;
   font-size: 18px;
   color: grey; 
+}
+.fonctionnement__liste {
+  font-weight: bold;
 }
 h2 {
   margin-left: 15px;
@@ -133,13 +123,14 @@ h2 {
   padding-bottom: 200px;
   padding-top: 30px;
   background-color: #f2f2f2;
-  position: relative;
+ 
 }
 section a {
   text-decoration: none;
   color: black;
 }
 .restaurant__card {
+  position: relative;
   height: 260px;
   width: 95%;
   margin-bottom: 10px;
@@ -167,13 +158,10 @@ section a {
 }
 .restaurant__texte-image {
   padding-right: 15%;
-  @include flexbox-row-space-between;
+  @include flexbox-row (row,center,space-between);
 }
 .restaurant__texte-image-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  @include flexbox-column (column,flex-start,flex-start);
   padding-left: 5%;
 }
 .icone-coeur-1 {
@@ -202,7 +190,7 @@ section a {
   margin-top: 4%;
   margin-bottom: 0%;
 }
-.restaurant__titre-nouveau-1 {
+.restaurant__titre-nouveau {
   font-size: 15px;
   text-align: center;
   border: 2px solid $color-tertiary;
@@ -212,17 +200,5 @@ section a {
   width: 18%;
   padding-top: 5px;
   padding-bottom: 5px;
-  @include position-items (absolute,120px,250px);
-}
-.restaurant__titre-nouveau-2 {
-  font-size: 15px;
-  text-align: center;
-  border: 2px solid $color-tertiary;
-  background-color: $color-tertiary;
-  color: darken($color-tertiary, 35%);
-  font-weight: bold;
-  width: 18%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  @include position-items (absolute,410px,250px);
+  @include position-items (absolute,20px,250px);
 }
