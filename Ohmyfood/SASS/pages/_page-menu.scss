@@ -3,6 +3,7 @@
     font-size:25px;
     color: black;
     margin-top: 50px;  
+    outline: none;
   }
   .fleche-logo{
     @include flexbox-row (row,center,space-around);
@@ -49,7 +50,7 @@
       border: 3px solid $color-tertiary;
       border-bottom:  $color-tertiary;
       @include position-items(absolute,30px,0px);
-      width: 10%;
+      width: 8%;
     }
   }
   .menu__bloc {
@@ -65,6 +66,7 @@
     display: inline-block;
     } 
   }
+  
   .menu__bloc-1 {
     padding-bottom:2%;
   }
@@ -78,63 +80,33 @@
     margin-top: 0%;
     padding-bottom: 2%;
     width:95%;
-   @include ellipsis;
-     
+    @include ellipsis; 
   }
-  i.far.fa-check-circle {
-    font-size: 30px;
-    background-color: white;
-    color: $color-tertiary;
-    @include border-radius(50%);
-    animation: spin 600ms;
+  .menu__prix{
+   padding-top: 5%;
+   margin-left: auto;
+   margin-right: 6%;
+   font-weight: bold;
   }
-  @keyframes spin {
-    0% { transform: rotate(360deg);
-    }
-    100% {transform: rotate(0deg);
-    } 
+  .menu__animation-1{
+   animation: defilement 2s both;
+   animation-delay: 150ms;
   }
-  .menu__icone-coche {
-    display: none;
-    font-size: 25px;
-    background-color: $color-tertiary;
-    @include sizepadding(5%);
-    @include border-radius (0px 15px 15px 0px);  
-    animation:coche 200ms;
+  .menu__animation-2{
+   animation: defilement 2s both;
+   animation-delay: 300ms;
   }
-@keyframes coche {
-  from {
-    transform: translateX(200px);
+ .menu__animation-3{
+   animation: defilement 2s both;
+   animation-delay: 400ms;
   }
-  to {
-    transform: translateX(0);
-  }
-}
-.menu__prix{
-  padding-top: 5%;
-  margin-left: auto;
-  margin-right: 6%;
-  font-weight: bold;
-}
-.menu__animation-1{
-  animation: defilement 2s both;
-  animation-delay: 150ms;
-}
-.menu__animation-2{
-  animation: defilement 2s both;
-  animation-delay: 300ms;
-}
-.menu__animation-3{
-  animation: defilement 2s both;
-  animation-delay: 400ms;
-}
-@keyframes defilement {
+  @keyframes defilement {
   0% {
-    transform: scale(0);
-    transform-origin: bottom;
+   transform: scale(0);
+   transform-origin: bottom;
   }
   100% {
-    transform: scale(1);
-    transform-origin: bottom;
+   transform: scale(1);
+   transform-origin: bottom;
   }
-}
+  }

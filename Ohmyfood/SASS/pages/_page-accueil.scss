@@ -164,27 +164,7 @@ section a {
   @include flexbox-column (column,flex-start,flex-start);
   padding-left: 5%;
 }
-.icone-coeur-1 {
-  color: black;
-  font-size: 25px;
-  position: relative;
-}
-.icone-coeur-2 { 
-  font-size: 11px;
-  position: absolute;
-  top:44%;
-  right: 30%; 
-  color:transparent;
-    &:active{
-    color: transparent;
-    @include background-linear;
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition: all 1200ms ease-in-out;
-    transform: scale(2);
-    transform-origin: bottom;
-  }
-}
+
 .restaurant__titre {
   font-size: 18px;
   margin-top: 4%;

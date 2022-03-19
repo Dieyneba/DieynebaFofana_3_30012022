@@ -1,4 +1,4 @@
-/* btn accueil*/
+/* btn page accueil*/
 .reservation__btn {
   color: white;
   font-size: 20px;
@@ -8,17 +8,47 @@
   @include box-shadow (4px 4px 4px 4px lighten($color-lightgrey, 2%));
   @include border-radius(35px);
   border: none;
-
 }
-/*btn menu*/
+/*btn icone coeur*/
+.restaurants button {
+  background-color: white;
+}
+.btn-icone-coeur {
+  border: none; 
+  padding: 0;
+}
+.icone-coeur-1 {
+  font-size: 25px;
+  position: relative;
+  &:active .icone-coeur-2{
+    color: transparent;
+    @include background-linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 1200ms ease-in-out;
+    transform: scale(2);
+    transform-origin: bottom;
+  }
+}
+.icone-coeur-2 { 
+  font-size: 11px;
+  position: absolute;
+  top:44%;
+  right: 30%; 
+  color:transparent;
+  
+}
+/*btn page menu*/
+
+/*btn commander*/
 .btn {
   @include flexbox-row (row,center,center);
   background-color: lighten(lightgrey, 12%);
-  @include sizepadding (5% 10% 85% 10%);
+  @include sizepadding (5% 10% 70% 10%);
   &:hover .btn-commander {
-    @include box-shadow (3px 3px 3px 3px silver);
-    opacity: 0.7;
-  }
+  @include box-shadow (3px 3px 3px 3px silver);
+  opacity: 0.7;
+}
 }
 .btn-commander {
   color: white;
@@ -27,4 +57,39 @@
   @include background-linear;
   @include border-radius (60px);
   border: none;
+}
+/*btn coche*/
+.menu .menu__icone-coche{
+  border: none;
+  padding: 0; 
+}
+i.far.fa-check-circle {
+  font-size: 30px;
+  background-color: white;
+  color: $color-tertiary;
+  @include border-radius(50%);
+  @include sizepadding(0%);
+  animation: spin 600ms;
+}
+@keyframes spin {
+  0% { transform: rotate(360deg);
+}
+  100% {transform: rotate(0deg);
+} 
+}
+.menu__icone-coche {
+  display: none;
+  height: 70px;
+  width: 15%;
+  background-color: $color-tertiary;
+  @include border-radius (0px 15px 15px 0px);  
+  animation:coche 200ms;
+}
+@keyframes coche {
+from {
+  transform: translateX(200px);
+}
+to {
+  transform: translateX(0);
+}
 }

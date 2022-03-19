@@ -6,7 +6,7 @@
   font-family: "roboto";
   box-sizing: border-box;
   position: relative;
-  min-height: 2250px;
+  min-height: 2300px;
   max-width: 2560px;
 }
 
@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 
-/* btn accueil*/
+/* btn page accueil*/
 .reservation__btn {
   color: white;
   font-size: 20px;
@@ -44,14 +44,47 @@
   border: none;
 }
 
-/*btn menu*/
+/*btn icone coeur*/
+.restaurants button {
+  background-color: white;
+}
+
+.btn-icone-coeur {
+  border: none;
+  padding: 0;
+}
+
+.icone-coeur-1 {
+  font-size: 25px;
+  position: relative;
+}
+.icone-coeur-1:active .icone-coeur-2 {
+  color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 1200ms ease-in-out;
+  transform: scale(2);
+  transform-origin: bottom;
+}
+
+.icone-coeur-2 {
+  font-size: 11px;
+  position: absolute;
+  top: 44%;
+  right: 30%;
+  color: transparent;
+}
+
+/*btn page menu*/
+/*btn commander*/
 .btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
-  padding: 5% 10% 85% 10%;
+  padding: 5% 10% 70% 10%;
 }
 .btn:hover .btn-commander {
   box-shadow: 3px 3px 3px 3px silver;
@@ -67,6 +100,66 @@
   border: none;
 }
 
+/*btn coche*/
+.menu .menu__icone-coche {
+  border: none;
+  padding: 0;
+}
+
+i.far.fa-check-circle {
+  font-size: 30px;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 0%;
+  -webkit-animation: spin 600ms;
+          animation: spin 600ms;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.menu__icone-coche {
+  display: none;
+  height: 70px;
+  width: 15%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-animation: coche 200ms;
+          animation: coche 200ms;
+}
+
+@-webkit-keyframes coche {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes coche {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /*layout*/
 /*footer*/
 footer, p {
@@ -398,29 +491,6 @@ section a {
   padding-left: 5%;
 }
 
-.icone-coeur-1 {
-  color: black;
-  font-size: 25px;
-  position: relative;
-}
-
-.icone-coeur-2 {
-  font-size: 11px;
-  position: absolute;
-  top: 44%;
-  right: 30%;
-  color: transparent;
-}
-.icone-coeur-2:active {
-  color: transparent;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 1200ms ease-in-out;
-  transform: scale(2);
-  transform-origin: bottom;
-}
-
 .restaurant__titre {
   font-size: 18px;
   margin-top: 4%;
@@ -447,6 +517,7 @@ section a {
   font-size: 25px;
   color: black;
   margin-top: 50px;
+  outline: none;
 }
 
 .fleche-logo {
@@ -512,7 +583,7 @@ section a {
   position: absolute;
   top: 30px;
   left: 0px;
-  width: 10%;
+  width: 8%;
 }
 
 .menu__bloc {
@@ -554,59 +625,6 @@ section a {
   text-overflow: ellipsis;
 }
 
-i.far.fa-check-circle {
-  font-size: 30px;
-  background-color: white;
-  color: #99E2D0;
-  border-radius: 50%;
-  -webkit-animation: spin 600ms;
-          animation: spin 600ms;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.menu__icone-coche {
-  display: none;
-  font-size: 25px;
-  background-color: #99E2D0;
-  padding: 5%;
-  border-radius: 0px 15px 15px 0px;
-  -webkit-animation: coche 200ms;
-          animation: coche 200ms;
-}
-
-@-webkit-keyframes coche {
-  from {
-    transform: translateX(200px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes coche {
-  from {
-    transform: translateX(200px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 .menu__prix {
   padding-top: 5%;
   margin-left: auto;
@@ -718,7 +736,7 @@ i.far.fa-check-circle {
 @media all and (min-width: 1024px) {
   /*base*/
   .contenu-page {
-    min-height: 1300px;
+    min-height: 1450px;
   }
 
   /*rubrique formulaire*/
@@ -866,11 +884,11 @@ i.far.fa-check-circle {
 @media all and (min-width: 1024px) {
   /*base*/
   .contenu-page-1 {
-    min-height: 1450px;
+    min-height: 1550px;
   }
 
   .contenu-page-1-la-note-enchantee {
-    min-height: 1500px;
+    min-height: 1700px;
   }
 
   /*page menu restaurant*/
@@ -886,6 +904,11 @@ i.far.fa-check-circle {
   }
   .menu__bloc:hover .menu__icone-coche {
     display: inline-block;
+  }
+
+  .menu__icone-coche {
+    height: 90px;
+    width: 30%;
   }
 
   .menu__bloc-1 {

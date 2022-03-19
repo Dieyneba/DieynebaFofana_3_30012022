@@ -48,7 +48,7 @@ footer.pied-de-page {
 @media all and (min-width:1024px){
 /*base*/
 .contenu-page{
-    min-height: 1300px;
+    min-height: 1450px;
 }
 /*rubrique formulaire*/
 .formulaire__champs-de-recherche {
@@ -170,10 +170,10 @@ footer.pied-de-page {
 @media all and (min-width:1024px){
  /*base*/
 .contenu-page-1 {
-    min-height: 1450px;    
+    min-height: 1550px;    
 }
 .contenu-page-1-la-note-enchantee {
-    min-height: 1500px;
+    min-height: 1700px;
 }
 /*page menu restaurant*/
 .menu-1 {
@@ -187,6 +187,10 @@ footer.pied-de-page {
     &:hover .menu__icone-coche {
     display: inline-block;
 }
+}
+.menu__icone-coche {
+    height: 90px;
+    width: 30%;
 }
 .menu__bloc-1 {
     font-size: 18px;
