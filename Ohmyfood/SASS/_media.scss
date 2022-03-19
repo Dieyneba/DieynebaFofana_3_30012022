@@ -48,7 +48,7 @@ footer.pied-de-page {
 @media all and (min-width:1024px){
 /*base*/
 .contenu-page{
-    min-height: 1450px;
+    min-height: 1400px;
 }
 /*rubrique formulaire*/
 .formulaire__champs-de-recherche {
@@ -83,7 +83,7 @@ footer.pied-de-page {
 }
 .fonctionnement__numero {
     width: 5%;
-    padding:2px 5px;
+    @include sizepadding (2px 5px);
     font-size: 12px;
 }
 /*rubrique restaurant*/
@@ -148,7 +148,7 @@ footer.pied-de-page {
     min-height: 2400px;    
 }
 .contenu-page-1-la-note-enchantee {
-    min-height: 2500px;
+    min-height: 2550px;
 }
 /*page menu restaurant*/
 .menu__titre {
@@ -163,17 +163,17 @@ footer.pied-de-page {
 }
 /*btn menu*/
 .btn {
-    padding-bottom: 58%;
+    padding-bottom: 30%;
 }
 }
 
-@media all and (min-width:1024px){
+@media screen and (min-width:1024px) and (max-width:1440px){
  /*base*/
 .contenu-page-1 {
-    min-height: 1550px;    
+    min-height: 1350px;    
 }
 .contenu-page-1-la-note-enchantee {
-    min-height: 1700px;
+    min-height: 1400px;
 }
 /*page menu restaurant*/
 .menu-1 {
@@ -212,10 +212,15 @@ footer.pied-de-page {
     padding-right: 2%;   
 }
 .menu__intitulé {
-    width: 60%;
+    width: 70%;
+    font-size: 17px;
 }
 .menu__accompagnement {
-    width: 70%;
+    width: 50%;
+    font-size: 16px;
+}
+.menu__prix {
+    font-size: 13px;
 }
 .menu__icone-coche {
     @include sizepadding (6%);  
@@ -223,15 +228,83 @@ footer.pied-de-page {
 
 /*btn menu*/
 .btn {
-    padding-bottom: 20%;
+    padding-bottom:28%;
 }
 .btn-commander {
-    padding: 2% 7%;
+    @include sizepadding (2% 7%);
     font-size: 20px;
 } 
 /*footer*/
 footer.pied-de-page {
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom:5% ;
+    margin-top: 0px;  
+  }
+}
+@media all and (min-width: 1440px){
+/*base*/
+.contenu-page-1 {
+    min-height: 1500px;    
+}
+.contenu-page-1-la-note-enchantee {
+    min-height: 1500px;
+}
+/*page menu restaurant*/
+.menu-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     width: 100%;
+ }
+ .menu__bloc {
+     width: 100%;
+     &:hover .menu__icone-coche {
+     display: inline-block;
+ }
+ }
+ .menu__icone-coche {
+     height: 90px;
+     width: 30%;
+ }
+ .menu__bloc-1 {
+     font-size: 18px;
+     width: 100%;
+ }
+ .menu__nom {
+     @include flexbox-row (row,center,center);
+ }
+ .menu__titre {
+     margin-left: 4%;
+     width: 100%;
+ }
+ .menu__restaurant {
+     width: 30%;
+ }
+ .menu__titre-restaurant-1 {
+     font-size: 18px;
+     padding-top: 5%;
+     padding-right: 2%;   
+ }
+ .menu__intitulé {
+     width: 70%;
+     font-size: 17px;
+ }
+ .menu__accompagnement {
+     width: 50%;
+     font-size: 16px;
+ }
+ /*btn*/
+ .btn {
+    padding-bottom:18%;
+}
+.btn-commander {
+    @include sizepadding (2% 7%);
+    font-size: 20px;
+} 
+ /*footer*/
+footer.pied-de-page {
+    padding-top: 5%;
+    padding-bottom:5% ;
     margin-top: 0px;  
   }
 }
