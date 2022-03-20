@@ -1,0 +1,21 @@
+.contenu-page{
+    @include base;
+    min-height: 2300px;  
+    max-width: 2560px;
+}
+.contenu-page-1 {
+    @include base;
+    min-height: 1800px;
+    max-width: 2560px;  
+}
+.contenu-page-1-la-note-enchantee {
+    @include base;
+    min-height: 1900px;
+    max-width: 2560px;
+}
+.police-du-titre {
+    font-family: "Shrikhand";
+    font-size: 20px;
+    font-weight: bold;
+  }
+

@@ -1,0 +1,54 @@
+
+  @mixin base {
+  font-family: "roboto";
+  box-sizing: border-box;
+  position: relative;
+ }
+  @mixin flexbox-row ($row,$align,$justify-content-row) {
+    display: flex; 
+    flex-direction: $row;
+    align-items: $align;
+    justify-content:$justify-content-row;
+  }
+  @mixin flexbox-column ($column,$align,$justify-content-column){
+    display: flex; 
+    flex-direction: $column;
+    align-items: $align;
+    justify-content:$justify-content-column;
+  }
+  @mixin flexbox-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  @mixin flexbox-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+ @mixin background-linear {
+  background-image: linear-gradient(to top, $color-primary, $color-secondary);
+   }
+  @mixin sizepadding($padding){
+    padding:($padding);
+  }
+  @mixin box-shadow ($shadow) {
+    box-shadow:($shadow);
+  }
+  @mixin border-radius ($border) {
+    border-radius:($border);
+  }
+  @mixin position {
+    position: absolute;
+    bottom: 0;
+  }
+  @mixin position-items($position,$top,$left) {
+    position:($position);
+    top:($top);
+    left:($left);
+  }

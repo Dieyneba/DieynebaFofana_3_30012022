@@ -1,0 +1,184 @@
+/*loading-spinner*/
+.loader {
+  @include flexbox-center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  opacity: 1;
+  transform-origin: bottom;
+  animation: loader 1s both;
+  animation-delay: 2s;
+}
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 16px solid;
+  @include border-radius (50%);
+  border-top-color: $color-primary;
+  border-bottom-color: $color-secondary;
+  border-left-color: $color-tertiary;
+  border-right-color: $color-tertiary;
+  animation: spinner 1s infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*rubrique reservation page accueil*/
+.reservation {
+  padding-top:5% ;
+  padding-bottom: 5%;
+  @include flexbox-column (column,center,space-between);
+  text-align: center;
+  background-color: lighten($color-lightgrey, 12%);
+}
+.reservation__bloc {
+  &:hover .reservation__btn {
+    @include box-shadow (3px 3px 3px 3px silver);
+    opacity: 0.7;
+  }
+}
+.reservation,
+h1 {
+  margin-bottom: 2%;
+}
+.reservation__titre-1 {
+  font-size: 28px;
+}
+.reservation__texte-1 {
+  font-size: 20px;
+  padding-top: 0;
+  padding-bottom: 6%;
+}
+/*rubrique fonctionnement*/
+.fonctionnement {
+  margin-top: 30px;
+  width: 100%;
+}
+.fonctionnement__bloc-principal {
+  @include flexbox-column (column,center,space-evenly);
+ 
+}
+.fonctionnement__bloc {
+  position: relative;
+  @include border-radius (15px);
+  @include box-shadow (3px 3px 3px 3px lighten($color-lightgrey, 10%));
+  background-color: lighten(#f2f2f2, 2%);
+  @include flexbox-row (row,center,left);
+  width: 80%;
+  margin-bottom: 30px;
+  @include sizepadding (5%);
+  &:hover {
+    background-color: lighten($color-primary, 37%);
+  }
+  &:hover .fonctionnement__icone {
+    color: $color-primary;
+  }
+}
+.fonctionnement__numero {
+  @include border-radius (50%);
+  @include sizepadding (2px 3px);
+  font-size: 10px;
+  width: 3%;
+  border: 2px solid $color-primary;
+  background-color: $color-primary;
+  color: white;
+  text-align: center;
+  @include flexbox-column (column,center,left);
+  position: absolute; 
+  left: -10px;
+}
+.fonctionnement__icone {
+  padding-left:8%;
+  padding-right:8%;
+  font-size: 18px;
+  color: grey; 
+}
+.fonctionnement__liste {
+  font-weight: bold;
+}
+h2 {
+  margin-left: 15px;
+}
+/*rubrique page restaurants accueil*/
+.restaurants {
+  margin-top: 30px;
+  padding-bottom: 200px;
+  padding-top: 30px;
+  background-color: #f2f2f2;
+ 
+}
+section a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__card {
+  position: relative;
+  height: 260px;
+  width: 95%;
+  margin-bottom: 10px;
+  @include border-radius(15px);
+  @include box-shadow(5px 5px 5px 5px lighten(grey, 40%));
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+.restaurants img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center bottom;
+  @include border-radius(15px 15px 0px 0px);
+  box-sizing: border-box;
+}
+.restaurant__card-image img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box;
+}
+.restaurant__texte-image {
+  padding-right: 15%;
+  @include flexbox-row (row,center,space-between);
+}
+.restaurant__texte-image-1 {
+  @include flexbox-column (column,flex-start,flex-start);
+  padding-left: 5%;
+}
+
+.restaurant__titre {
+  font-size: 18px;
+  margin-top: 4%;
+  margin-bottom: 0%;
+}
+.restaurant__titre-nouveau {
+  font-size: 15px;
+  text-align: center;
+  border: 2px solid $color-tertiary;
+  background-color: $color-tertiary;
+  color: darken($color-tertiary, 35%);
+  font-weight: bold;
+  width: 18%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @include position-items (absolute,20px,250px);
+}
