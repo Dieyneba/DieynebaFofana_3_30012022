@@ -20,7 +20,7 @@
 .icone-coeur-1 {
   font-size: 25px;
   position: relative;
-  &:active .icone-coeur-2{
+  &:hover .icone-coeur-2{
     color: transparent;
     @include background-linear;
     background-clip: text;
