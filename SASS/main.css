@@ -58,7 +58,7 @@
   font-size: 25px;
   position: relative;
 }
-.icone-coeur-1:active .icone-coeur-2 {
+.icone-coeur-1:hover .icone-coeur-2 {
   color: transparent;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
