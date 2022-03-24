@@ -62,7 +62,7 @@
     background-color: white;
     @include flexbox-row (row,center,space-between);
     overflow: hidden;  
-    &:active .menu__icone-coche{ 
+    &:hover .menu__icone-coche{ 
     display: inline-block;
     } 
   }

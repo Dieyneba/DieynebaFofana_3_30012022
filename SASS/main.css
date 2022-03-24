@@ -599,7 +599,7 @@ section a {
   justify-content: space-between;
   overflow: hidden;
 }
-.menu__bloc:active .menu__icone-coche {
+.menu__bloc:hover .menu__icone-coche {
   display: inline-block;
 }
 
